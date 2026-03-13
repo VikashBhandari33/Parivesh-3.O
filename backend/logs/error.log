@@ -1,0 +1,17 @@
+2026-03-13 20:53:38 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-13 20:53:38 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-13 20:56:46 [[31merror[39m]: AppError: At least one document must be uploaded before submission
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\applications.ts:187:11)
+2026-03-13 21:04:44 [[31merror[39m]: AppError: At least one document must be uploaded before submission
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\applications.ts:187:11)

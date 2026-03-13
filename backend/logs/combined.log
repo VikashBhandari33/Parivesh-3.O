@@ -1,0 +1,71 @@
+2026-03-13 20:50:28 [[32minfo[39m]: ✅ PostgreSQL connected
+2026-03-13 20:50:28 [[32minfo[39m]: ✅ Redis connected
+2026-03-13 20:50:28 [[32minfo[39m]: 🚀 CECB Backend running on http://localhost:3000
+2026-03-13 20:50:28 [[32minfo[39m]: 📚 API Docs: http://localhost:3000/api/docs
+2026-03-13 20:51:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:21:57 +0000] "POST /api/auth/login HTTP/1.1" 200 478 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:51:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:21:57 +0000] "GET /api/audit/chain/verify HTTP/1.1" 200 119 "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:51:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:21:57 +0000] "GET /api/admin/stats HTTP/1.1" 200 833 "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:51:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:21:57 +0000] "GET /api/notifications HTTP/1.1" 200 51 "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:21 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:21 +0000] "GET / HTTP/1.1" 404 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:21 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:21 +0000] "GET /favicon.ico HTTP/1.1" 404 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:27 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:27 +0000] "GET /api/notifications HTTP/1.1" 304 - "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:37 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:37 +0000] "GET /api/admin/users HTTP/1.1" 200 836 "http://localhost:5173/dashboard/admin/users" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:43 +0000] "GET /api/audit/chain/verify HTTP/1.1" 304 - "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:43 +0000] "GET /api/admin/stats HTTP/1.1" 304 - "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:52:58 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:22:58 +0000] "GET /api/notifications HTTP/1.1" 304 - "http://localhost:5173/dashboard/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:53:23 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:23:23 +0000] "POST /api/auth/logout HTTP/1.1" 200 61 "http://localhost:5173/dashboard/admin/users" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:53:38 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-13 20:53:38 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:23:38 +0000] "POST /api/auth/login HTTP/1.1" 401 85 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:53:38 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-13 20:53:38 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:23:38 +0000] "POST /api/auth/refresh HTTP/1.1" 401 80 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:54:56 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:24:56 +0000] "POST /api/auth/register HTTP/1.1" 201 510 "http://localhost:5173/register" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:54:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:24:57 +0000] "GET /api/notifications HTTP/1.1" 304 - "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:54:57 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:24:57 +0000] "GET /api/applications HTTP/1.1" 200 75 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:55:39 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:25:39 +0000] "GET /api/notifications HTTP/1.1" 304 - "http://localhost:5173/dashboard/proponent/new" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:19 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:19 +0000] "POST /api/auth/logout HTTP/1.1" 200 61 "http://localhost:5173/dashboard/proponent/new" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:31 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:31 +0000] "POST /api/auth/login HTTP/1.1" 200 482 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:31 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:31 +0000] "GET /api/notifications HTTP/1.1" 304 - "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:31 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:31 +0000] "GET /api/applications HTTP/1.1" 200 887 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:38 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:38 +0000] "GET /api/applications/00000000-0000-0000-0000-000000000001 HTTP/1.1" 200 901 "http://localhost:5173/dashboard/proponent/application/00000000-0000-0000-0000-000000000001" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:56:46 [[31merror[39m]: AppError: At least one document must be uploaded before submission
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\applications.ts:187:11)
+2026-03-13 20:56:46 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:26:46 +0000] "POST /api/applications/00000000-0000-0000-0000-000000000001/submit HTTP/1.1" 400 114 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13 20:59:24 [[32minfo[39m]: ✅ PostgreSQL connected
+2026-03-13 20:59:24 [[32minfo[39m]: ✅ Redis connected
+2026-03-13 20:59:24 [[32minfo[39m]: 🚀 CECB Backend running on http://localhost:3000
+2026-03-13 20:59:24 [[32minfo[39m]: 📚 API Docs: http://localhost:3000/api/docs
+2026-03-13 21:01:57 [[32minfo[39m]: ✅ PostgreSQL connected
+2026-03-13 21:01:57 [[32minfo[39m]: ✅ Redis connected
+2026-03-13 21:01:57 [[32minfo[39m]: 🚀 CECB Backend running on http://localhost:3000
+2026-03-13 21:01:57 [[32minfo[39m]: 📚 API Docs: http://localhost:3000/api/docs
+2026-03-13 21:02:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:43 +0000] "GET /api/docs HTTP/1.1" 301 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:43 +0000] "GET /api/docs/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:43 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:43 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:43 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:43 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:44 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:44 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:44 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:44 +0000] "GET /api/docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:49 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:49 +0000] "GET / HTTP/1.1" 404 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:02:49 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:32:49 +0000] "GET /favicon.ico HTTP/1.1" 404 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:04 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:04 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:04 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:04 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:04 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:04 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:04 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:04 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:04 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:04 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:42 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:42 +0000] "POST /api/auth/login HTTP/1.1" 200 482 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:42 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:42 +0000] "GET /api/notifications HTTP/1.1" 200 51 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:42 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:42 +0000] "GET /api/applications HTTP/1.1" 200 887 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+2026-03-13 21:04:44 [[31merror[39m]: AppError: At least one document must be uploaded before submission
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\applications.ts:187:11)
+2026-03-13 21:04:44 [[32mhttp[39m]: ::1 - - [13/Mar/2026:15:34:44 +0000] "POST /api/applications/00000000-0000-0000-0000-000000000001/submit HTTP/1.1" 400 114 "http://localhost:5173/dashboard/proponent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"

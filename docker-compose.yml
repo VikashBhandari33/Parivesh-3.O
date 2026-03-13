@@ -1,0 +1,72 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgis/postgis:16-3.4-alpine
+    container_name: cecb_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cecb_user
+      POSTGRES_PASSWORD: cecb_pass
+      POSTGRES_DB: cecb_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cecb_user -d cecb_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: cecb_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cecb_backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://cecb_user:cecb_pass@postgres:5432/cecb_db
+      REDIS_URL: redis://redis:6379
+      NODE_ENV: production
+      PORT: 3000
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./uploads:/app/uploads
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: cecb_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+
+volumes:
+  postgres_data:
+  redis_data:
