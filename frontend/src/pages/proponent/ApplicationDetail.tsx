@@ -12,6 +12,9 @@ import api from '../../lib/api';
 import StatusBadge from '../../components/StatusBadge';
 import DocumentUpload from '../../components/DocumentUpload';
 import GISMap from '../../components/GISMap';
+import { useApplicationPrediction } from '../../hooks/usePrediction';
+import ApprovalChanceBadge from '../../components/ApprovalChanceBadge';
+import PredictionCard from '../../components/PredictionCard';
 
 const STAGE_LABELS = [
   { status: 'DRAFT',          label: 'Draft Created',          icon: FileText    },
@@ -36,6 +39,7 @@ export default function ApplicationDetail() {
   });
 
   const app = data;
+  const { data: prediction, isLoading: isPredictionLoading, error: predictionError } = useApplicationPrediction(id);
 
   const submitMutation = useMutation({
     mutationFn: () => api.post(`/applications/${id}/submit`),
@@ -82,6 +86,11 @@ export default function ApplicationDetail() {
             </button>
             <h1 className="text-2xl font-bold text-gray-900">{app.projectName}</h1>
             <StatusBadge status={app.status} />
+            <ApprovalChanceBadge 
+              chance={prediction?.approvalChance} 
+              days={prediction?.estimatedDays} 
+              loading={isPredictionLoading} 
+            />
           </div>
           <p className="text-gray-500 text-sm ml-7">{app.sector} • {app.district}, {app.state}</p>
         </div>
@@ -230,6 +239,15 @@ export default function ApplicationDetail() {
                 <p className="text-sm text-gray-700">{app.description}</p>
               </div>
             )}
+          </div>
+
+          {/* Predictive Analytics */}
+          <div className="mb-4">
+            <PredictionCard 
+              prediction={prediction} 
+              isLoading={isPredictionLoading}
+              error={predictionError as Error | null}
+            />
           </div>
 
           {/* Map (if lat/lng available) */}

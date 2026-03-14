@@ -1,0 +1,125 @@
+{
+  "dataPoints": 1000,
+  "baseRate": 16.1,
+  "baseDays": 69.40372670807453,
+  "sectors": {
+    "infrastructure": {
+      "rateOffset": 1.4115207373271872,
+      "daysOffset": -1.9826740764955844,
+      "approvedCount": 38
+    },
+    "sand mining": {
+      "rateOffset": -3.105649717514126,
+      "daysOffset": 5.204968944099377,
+      "approvedCount": 23
+    },
+    "brick kiln": {
+      "rateOffset": -0.6070422535211293,
+      "daysOffset": -2.282514586862405,
+      "approvedCount": 33
+    },
+    "limestone quarry": {
+      "rateOffset": 2.5602870813397125,
+      "daysOffset": -2.224239528587347,
+      "approvedCount": 39
+    },
+    "industrial plant": {
+      "rateOffset": -0.8826086956521735,
+      "daysOffset": 4.203416149068332,
+      "approvedCount": 28
+    }
+  },
+  "districts": {
+    "rajnandgaon": {
+      "rateOffset": 4.270370370370369,
+      "daysOffset": -8.176453980801803,
+      "approvedCount": 22
+    },
+    "ambikapur": {
+      "rateOffset": -0.31052631578947576,
+      "daysOffset": -3.9592822636300866,
+      "approvedCount": 18
+    },
+    "jagdalpur": {
+      "rateOffset": 3.2277310924369758,
+      "daysOffset": 6.944099378881987,
+      "approvedCount": 23
+    },
+    "korba": {
+      "rateOffset": -3.4873873873873897,
+      "daysOffset": 3.8105590062111787,
+      "approvedCount": 14
+    },
+    "raigarh": {
+      "rateOffset": -2.1869565217391322,
+      "daysOffset": -3.5912267080745295,
+      "approvedCount": 16
+    },
+    "raipur": {
+      "rateOffset": 10.273626373626374,
+      "daysOffset": -5.987060041407865,
+      "approvedCount": 24
+    },
+    "kanker": {
+      "rateOffset": 0.27931034482758577,
+      "daysOffset": -0.35109512912715957,
+      "approvedCount": 19
+    },
+    "bilaspur": {
+      "rateOffset": -0.31052631578947576,
+      "daysOffset": 9.818495514147699,
+      "approvedCount": 18
+    },
+    "durg": {
+      "rateOffset": -9.850000000000001,
+      "daysOffset": 9.881987577639762,
+      "approvedCount": 7
+    }
+  },
+  "areas": {
+    "<3": {
+      "rateOffset": -4.42116788321168
+    },
+    "3-6": {
+      "rateOffset": 5.11212121212121
+    },
+    "6-10": {
+      "rateOffset": -3.056521739130437
+    },
+    ">10": {
+      "rateOffset": 0.7539325842696627
+    }
+  },
+  "risks": {
+    "Low (<0.3)": {
+      "rateOffset": -1.4754940711462474,
+      "daysOffset": -0.7010240053718206
+    },
+    "Medium (0.3-0.5)": {
+      "rateOffset": -2.0375000000000014,
+      "daysOffset": -11.375948930296751
+    },
+    "High (0.5-0.7)": {
+      "rateOffset": -1.6468750000000014,
+      "daysOffset": 10.677354373006551
+    },
+    "Very High (>0.7)": {
+      "rateOffset": 5.602127659574467,
+      "daysOffset": 0.792351723298026
+    }
+  },
+  "eds": {
+    "0": {
+      "daysOffset": -0.8799171842650111
+    },
+    "1": {
+      "daysOffset": 3.2015364498202104
+    },
+    "2": {
+      "daysOffset": 2.412062765609676
+    },
+    "3+": {
+      "daysOffset": -4.101401126679178
+    }
+  }
+}

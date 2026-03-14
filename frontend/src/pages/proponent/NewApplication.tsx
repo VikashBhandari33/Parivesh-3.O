@@ -10,6 +10,8 @@ import { ChevronRight, ChevronLeft, Check, MapPin, AlertTriangle, Info } from 'l
 import api from '../../lib/api';
 import GISMap from '../../components/GISMap';
 import DocumentUpload from '../../components/DocumentUpload';
+import { useLivePrediction } from '../../hooks/usePrediction';
+import PredictionCard from '../../components/PredictionCard';
 
 const STEPS = ['Project Details', 'Location & GIS', 'Documents', 'Payment Info', 'Review & Submit'];
 
@@ -98,6 +100,16 @@ export default function NewApplication() {
   const lat = watch('lat');
   const lng = watch('lng');
   const district = watch('district');
+  const sector = watch('sector');
+  const areaHa = watch('areaHa');
+
+  const { data: prediction, isLoading: isPredictionLoading, error: predictionError } = useLivePrediction({
+    sector: sector || '',
+    district: district || '',
+    areaHa: areaHa ? Number(areaHa) : 0,
+    riskScore: 0,
+    edsCount: 0
+  });
 
   // Pan map view when district is selected (no pin dropped)
   useEffect(() => {
@@ -422,7 +434,19 @@ export default function NewApplication() {
             {/* ── Step 5: Review ── */}
             {step === 4 && (
               <div className="space-y-4">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">Review & Save</h2>
+                <h2 className="text-lg font-semibold text-gray-900 mb-1">Review & Save</h2>
+                <p className="text-sm text-gray-500 mb-4">
+                  Review your application details and check the AI prediction snapshot below before submitting.
+                </p>
+
+                <div className="mb-4">
+                  <PredictionCard 
+                    prediction={prediction} 
+                    isLoading={isPredictionLoading} 
+                    error={predictionError as Error | null} 
+                  />
+                </div>
+
                 <div className="bg-gray-50 rounded-xl p-5 space-y-3 text-sm">
                   {[
                     ['Project Name', getValues('projectName')],
