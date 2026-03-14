@@ -139,6 +139,7 @@ model Document {
   scanned       Boolean      @default(false)
   pqcSignature  String?      @map("pqc_signature")
   pqcPublicKey  String?      @map("pqc_public_key")
+  verificationResult Json?   @map("verification_result")
   uploadedAt    DateTime     @default(now()) @map("uploaded_at")
 
   // Relations

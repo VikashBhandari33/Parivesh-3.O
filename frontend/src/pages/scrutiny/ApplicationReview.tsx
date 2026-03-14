@@ -145,7 +145,7 @@ export default function ApplicationReview() {
           )}
 
           {/* Intelligent Document Verification */}
-          <IntelligentDocumentVerification />
+          <IntelligentDocumentVerification applicationId={id!} />
 
           {/* Documents to verify */}
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">

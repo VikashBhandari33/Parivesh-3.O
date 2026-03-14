@@ -27,6 +27,8 @@ import adminRoutes from './routes/admin';
 import gisRoutes from './routes/gis';
 import notificationRoutes from './routes/notifications';
 import satelliteRoutes from './routes/satellite';
+import './services/gistQueue';
+import './services/documentVerificationQueue';
 
 export const app = express();
 const httpServer = http.createServer(app);

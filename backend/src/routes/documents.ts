@@ -10,6 +10,7 @@ import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/a
 import { auditChainService } from '../services/auditChain';
 import { aiAuditService } from '../services/aiAuditService';
 import { PQCManager } from '../utils/pqc';
+import { documentVerificationQueue } from '../services/documentVerificationQueue';
 
 const router = Router();
 
@@ -97,6 +98,9 @@ router.post('/:applicationId', authenticate, requireRole(['PROPONENT']),
       applicationId,
       payload: { docType, fileName: req.file.originalname, fileHash },
     });
+
+    // Enqueue document for async Intelligent Verification (OCR + Groq NLP)
+    await documentVerificationQueue.add({ documentId: document.id });
 
     res.status(201).json({ success: true, data: document });
   })
