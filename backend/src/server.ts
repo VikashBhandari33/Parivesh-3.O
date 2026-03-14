@@ -28,6 +28,7 @@ import gisRoutes from './routes/gis';
 import notificationRoutes from './routes/notifications';
 import satelliteRoutes from './routes/satellite';
 import predictionRoutes from './routes/prediction';
+import chatbotRoutes from './routes/chatbot';
 import './services/gistQueue';
 import './services/documentVerificationQueue';
 
@@ -89,6 +90,7 @@ app.use('/api/gis', apiLimiter, gisRoutes);
 app.use('/api/satellite', apiLimiter, satelliteRoutes);
 app.use('/api/prediction', apiLimiter, predictionRoutes);
 app.use('/api/notifications', apiLimiter, notificationRoutes);
+app.use('/api/chat', apiLimiter, chatbotRoutes);
 
 // ─── Static uploads (local storage fallback) ──────────────────────────────────
 app.use('/uploads', express.static('uploads'));

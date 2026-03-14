@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from './store/authStore';
 import { useSocketSetup } from './hooks/useSocket';
+import { ChatbotWidget } from './components/ChatbotWidget';
 
 // Auth pages
 import LoginPage from './pages/auth/Login';
@@ -55,42 +56,45 @@ export default function App() {
   useSocketSetup();
 
   return (
-    <Routes>
-      {/* Public */}
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegisterPage />} />
+    <>
+      <ChatbotWidget />
+      <Routes>
+        {/* Public */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
 
-      {/* Protected */}
-      <Route path="/dashboard" element={<RequireAuth><AppLayout /></RequireAuth>}>
-        <Route index element={<RoleRedirect />} />
+        {/* Protected */}
+        <Route path="/dashboard" element={<RequireAuth><AppLayout /></RequireAuth>}>
+          <Route index element={<RoleRedirect />} />
 
-        {/* Proponent */}
-        <Route path="proponent" element={<RequireAuth roles={['PROPONENT']}><ProponentDashboard /></RequireAuth>} />
-        <Route path="proponent/new" element={<RequireAuth roles={['PROPONENT']}><NewApplication /></RequireAuth>} />
-        <Route path="proponent/application/:id" element={<RequireAuth roles={['PROPONENT']}><ApplicationDetail /></RequireAuth>} />
-        <Route path="proponent/payment/:id" element={<RequireAuth roles={['PROPONENT']}><PaymentPage /></RequireAuth>} />
+          {/* Proponent */}
+          <Route path="proponent" element={<RequireAuth roles={['PROPONENT']}><ProponentDashboard /></RequireAuth>} />
+          <Route path="proponent/new" element={<RequireAuth roles={['PROPONENT']}><NewApplication /></RequireAuth>} />
+          <Route path="proponent/application/:id" element={<RequireAuth roles={['PROPONENT']}><ApplicationDetail /></RequireAuth>} />
+          <Route path="proponent/payment/:id" element={<RequireAuth roles={['PROPONENT']}><PaymentPage /></RequireAuth>} />
 
-        {/* Scrutiny */}
-        <Route path="scrutiny" element={<RequireAuth roles={['SCRUTINY']}><ScrutinyDashboard /></RequireAuth>} />
-        <Route path="scrutiny/review/:id" element={<RequireAuth roles={['SCRUTINY']}><ApplicationReview /></RequireAuth>} />
+          {/* Scrutiny */}
+          <Route path="scrutiny" element={<RequireAuth roles={['SCRUTINY']}><ScrutinyDashboard /></RequireAuth>} />
+          <Route path="scrutiny/review/:id" element={<RequireAuth roles={['SCRUTINY']}><ApplicationReview /></RequireAuth>} />
 
-        {/* MoM Team */}
-        <Route path="mom" element={<RequireAuth roles={['MOM_TEAM']}><MomDashboard /></RequireAuth>} />
-        <Route path="mom/editor/:id" element={<RequireAuth roles={['MOM_TEAM']}><MomEditor /></RequireAuth>} />
+          {/* MoM Team */}
+          <Route path="mom" element={<RequireAuth roles={['MOM_TEAM']}><MomDashboard /></RequireAuth>} />
+          <Route path="mom/editor/:id" element={<RequireAuth roles={['MOM_TEAM']}><MomEditor /></RequireAuth>} />
 
-        {/* Admin */}
-        <Route path="admin" element={<RequireAuth roles={['ADMIN']}><AdminDashboard /></RequireAuth>} />
-        <Route path="admin/audit/:id" element={<RequireAuth roles={['ADMIN']}><AuditLog /></RequireAuth>} />
-        <Route path="admin/users" element={<RequireAuth roles={['ADMIN']}><UserManagement /></RequireAuth>} />
+          {/* Admin */}
+          <Route path="admin" element={<RequireAuth roles={['ADMIN']}><AdminDashboard /></RequireAuth>} />
+          <Route path="admin/audit/:id" element={<RequireAuth roles={['ADMIN']}><AuditLog /></RequireAuth>} />
+          <Route path="admin/users" element={<RequireAuth roles={['ADMIN']}><UserManagement /></RequireAuth>} />
 
-        {/* Shared application list */}
-        <Route path="application" element={<RequireAuth><ApplicationList /></RequireAuth>} />
-        <Route path="application/:id" element={<RequireAuth><ApplicationDetail /></RequireAuth>} />
-      </Route>
+          {/* Shared application list */}
+          <Route path="application" element={<RequireAuth><ApplicationList /></RequireAuth>} />
+          <Route path="application/:id" element={<RequireAuth><ApplicationDetail /></RequireAuth>} />
+        </Route>
 
-      {/* Catch-all */}
-      <Route path="*" element={<Navigate to="/dashboard" replace />} />
-    </Routes>
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+    </>
   );
 }
