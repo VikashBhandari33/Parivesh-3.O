@@ -95,6 +95,12 @@ export default function RegisterPage() {
               <input {...register('organization')} className="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Your company / organization" />
             </div>
 
+            {/* Phone Name */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+              <input {...register('phone')} type="tel" className="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="+91 9876543210" />
+            </div>
+
             {/* Role */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Account Type *</label>

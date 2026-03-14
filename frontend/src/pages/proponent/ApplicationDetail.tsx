@@ -283,6 +283,7 @@ export default function ApplicationDetail() {
                 issuedAt: string;
                 issuedBy: { name: string };
                 resolvedAt: string | null;
+                pdfUrl?: string | null;
               }) => (
                 <div key={notice.id} className="space-y-2">
                   <p className="text-xs text-orange-600">
@@ -298,6 +299,18 @@ export default function ApplicationDetail() {
                     <p className="text-xs text-green-600">
                       ✅ Resolved {format(new Date(notice.resolvedAt), 'dd MMM yyyy')}
                     </p>
+                  )}
+                  {notice.pdfUrl && (
+                    <div className="mt-2 text-right">
+                       <a 
+                         href={notice.pdfUrl.startsWith('http') ? notice.pdfUrl : `${api.defaults.baseURL?.replace('/api', '')}${notice.pdfUrl}`}
+                         target="_blank" 
+                         rel="noreferrer"
+                         className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-700 hover:underline"
+                       >
+                         <FileText className="w-3.5 h-3.5" /> Download EDS Notice (PDF)
+                       </a>
+                    </div>
                   )}
                 </div>
               ))}

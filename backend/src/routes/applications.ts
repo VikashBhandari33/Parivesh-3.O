@@ -7,6 +7,8 @@ import { asyncHandler, AppError } from '../middleware/errorHandler';
 import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/auth';
 import { auditChainService } from '../services/auditChain';
 import { io } from '../server';
+import { generateEdsPdf } from '../services/pdfService';
+import { sendSMS } from '../services/smsService';
 
 const router = Router();
 
@@ -261,10 +263,21 @@ router.post('/:id/start-scrutiny', authenticate, requireRole(['SCRUTINY', 'ADMIN
 // ─── POST /api/applications/:id/eds ───────────────────────────────────────────
 router.post('/:id/eds', authenticate, requireRole(['SCRUTINY', 'ADMIN']), asyncHandler(async (req: AuthenticatedRequest, res) => {
   const body = edsSchema.parse(req.body);
-  const app = await prisma.application.findUnique({ where: { id: req.params.id } });
+  const app = await prisma.application.findUnique({ 
+    where: { id: req.params.id },
+    include: { proponent: true }
+  });
   if (!app) throw new AppError(404, 'NOT_FOUND', 'Application not found');
 
   assertValidTransition(app.status, 'EDS');
+
+  const pdfUrl = await generateEdsPdf(
+    app.id,
+    app.projectName,
+    app.proponent?.name || 'Proponent',
+    body.deficiencies,
+    body.remarks
+  );
 
   const [updated, notice] = await prisma.$transaction([
     prisma.application.update({
@@ -277,6 +290,7 @@ router.post('/:id/eds', authenticate, requireRole(['SCRUTINY', 'ADMIN']), asyncH
         deficiencies: body.deficiencies,
         issuedById: req.user!.id,
         remarks: body.remarks,
+        pdfUrl: pdfUrl,
       },
     }),
   ]);
@@ -290,6 +304,13 @@ router.post('/:id/eds', authenticate, requireRole(['SCRUTINY', 'ADMIN']), asyncH
 
   io.to(`application:${app.id}`).emit('status:changed', { applicationId: app.id, status: 'EDS' });
   io.to(`user:${app.proponentId}`).emit('notification', { type: 'EDS', applicationId: app.id });
+
+  if (app.proponent?.phone) {
+    await sendSMS(
+      app.proponent.phone,
+      `URGENT: An Essential Details Sought (EDS) Notice has been issued for your project "${app.projectName}". Please login to CECB portal to download the EDS PDF and resubmit.`
+    );
+  }
 
   res.json({ success: true, data: { application: updated, notice } });
 }));
@@ -324,7 +345,10 @@ router.post('/:id/refer', authenticate, requireRole(['SCRUTINY', 'ADMIN']), asyn
 
 // ─── POST /api/applications/:id/finalize ──────────────────────────────────────
 router.post('/:id/finalize', authenticate, requireRole(['MOM_TEAM', 'ADMIN']), asyncHandler(async (req: AuthenticatedRequest, res) => {
-  const app = await prisma.application.findUnique({ where: { id: req.params.id } });
+  const app = await prisma.application.findUnique({ 
+    where: { id: req.params.id },
+    include: { proponent: true }
+  });
   if (!app) throw new AppError(404, 'NOT_FOUND', 'Application not found');
 
   assertValidTransition(app.status, 'FINALIZED');
@@ -345,6 +369,13 @@ router.post('/:id/finalize', authenticate, requireRole(['MOM_TEAM', 'ADMIN']), a
 
   io.to(`application:${app.id}`).emit('status:changed', { applicationId: app.id, status: 'FINALIZED' });
   io.to(`user:${app.proponentId}`).emit('notification', { type: 'FINALIZED', applicationId: app.id });
+
+  if (app.proponent?.phone) {
+    await sendSMS(
+      app.proponent.phone,
+      `CONGRATULATIONS! Your application for "${app.projectName}" has been officially FINALIZED and approved. Please log in to download the clearance certificate.`
+    );
+  }
 
   res.json({ success: true, data: updated });
 }));
