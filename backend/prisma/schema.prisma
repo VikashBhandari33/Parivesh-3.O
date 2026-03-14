@@ -133,6 +133,8 @@ model Document {
   ocrText       String?      @map("ocr_text")
   verified      Boolean      @default(false)
   scanned       Boolean      @default(false)
+  pqcSignature  String?      @map("pqc_signature")
+  pqcPublicKey  String?      @map("pqc_public_key")
   uploadedAt    DateTime     @default(now()) @map("uploaded_at")
 
   // Relations

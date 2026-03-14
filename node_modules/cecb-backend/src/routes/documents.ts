@@ -8,6 +8,7 @@ import { prisma } from '../utils/prisma';
 import { asyncHandler, AppError } from '../middleware/errorHandler';
 import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/auth';
 import { auditChainService } from '../services/auditChain';
+import { PQCManager } from '../utils/pqc';
 
 const router = Router();
 
@@ -70,6 +71,10 @@ router.post('/:applicationId', authenticate, requireRole(['PROPONENT']),
       ? `/uploads/${req.file.filename}`
       : req.file.path; // In production: upload to S3 and return URL
 
+    // Generate PQC hybrid keys and create a post-quantum signature of the fileHash
+    const { publicKey: pqcPublicKey, privateKey } = await PQCManager.generateKyberKeyPair();
+    const pqcSignature = await PQCManager.signDocument(fileHash, privateKey);
+
     const document = await prisma.document.create({
       data: {
         applicationId,
@@ -80,6 +85,8 @@ router.post('/:applicationId', authenticate, requireRole(['PROPONENT']),
         fileSizeBytes: req.file.size,
         mimeType: req.file.mimetype,
         scanned: true,
+        pqcSignature,
+        pqcPublicKey,
       },
     });
 

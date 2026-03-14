@@ -14,7 +14,7 @@ const ROLE_BADGE: Record<string, { label: string; color: string }> = {
 };
 
 export default function TopBar() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const user = useAuthStore(s => s.user);
   const logout = useAuthStore(s => s.logout);
   const navigate = useNavigate();
@@ -111,7 +111,7 @@ export default function TopBar() {
                   onClick={() => void handleLogout()}
                   className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                 >
-                  <LogOut className="w-4 h-4" /> Sign out
+                  <LogOut className="w-4 h-4" /> {t('auth.signOut')}
                 </button>
               </div>
             </div>

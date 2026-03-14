@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "applications": "Applications",
+    "newApplication": "New Application",
+    "auditLog": "Audit Log",
+    "users": "Users",
+    "logout": "Sign Out"
+  },
+  "dashboard": {
+    "adminTitle": "Admin Dashboard",
+    "manageUsers": "Manage Users",
+    "totalApplications": "Total Applications"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "register": "Register"
+  },
+  "app": {
+    "title": "CECB Environmental Clearance System",
+    "language": "Language"
+  }
+}

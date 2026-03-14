@@ -314,3 +314,143 @@
     at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
     at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 08:21:18 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at t (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async start (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\server.ts:124:5)
+2026-03-14 08:21:54 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at t (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async start (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\server.ts:124:5)
+2026-03-14 09:13:01 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at t (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async start (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\server.ts:124:5)
+2026-03-14 10:30:43 [[31merror[39m]: AppError: Payment record not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\payments.ts:91:23)
+2026-03-14 10:34:12 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 10:34:12 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 10:48:04 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 10:48:04 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:01:30 [[31merror[39m]: AppError: Payment record not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\payments.ts:91:23)
+2026-03-14 11:02:15 [[31merror[39m]: AppError: Payment record not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\payments.ts:91:23)
+2026-03-14 11:12:56 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 11:17:08 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 11:17:08 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:19:10 [[31merror[39m]: AppError: Only PDF, images, and Word documents are allowed
+    at fileFilter (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\documents.ts:33:8)
+    at wrappedFileFilter (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:567:19)
+2026-03-14 11:19:27 [[31merror[39m]: AppError: Only PDF, images, and Word documents are allowed
+    at fileFilter (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\documents.ts:33:8)
+    at wrappedFileFilter (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\busboy\lib\types\multipart.js:567:19)
+2026-03-14 11:23:21 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 11:23:21 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:25:38 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 11:25:38 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:26:42 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 11:27:48 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 11:27:48 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:28:52 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 11:28:52 [[31merror[39m]: AppError: Refresh token not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:161:21)
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\middleware\errorHandler.ts:18:21)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
+2026-03-14 11:29:50 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)

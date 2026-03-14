@@ -12,8 +12,10 @@ const STATUS_COLORS: Record<string, string> = {
   DRAFT: '#9CA3AF', SUBMITTED: '#3B82F6', UNDER_SCRUTINY: '#F59E0B',
   EDS: '#F97316', REFERRED: '#8B5CF6', MOM_GENERATED: '#06B6D4', FINALIZED: '#10B981',
 };
+import { useTranslation } from 'react-i18next';
 
 export default function AdminDashboard() {
+  const { t } = useTranslation();
   const { data: statsData, isLoading } = useQuery({
     queryKey: ['admin-stats'],
     queryFn: () => api.get('/admin/stats').then((r) => r.data.data),
@@ -38,7 +40,7 @@ export default function AdminDashboard() {
   const sectorData: { sector: string; count: number }[] = stats.bySector || [];
 
   const topCards = [
-    { label: 'Total Applications', value: stats.totalApplications || 0, Icon: FileText,      color: 'text-blue-600',   bg: 'bg-blue-50'   },
+    { label: t('dashboard.totalApplications'), value: stats.totalApplications || 0, Icon: FileText,      color: 'text-blue-600',   bg: 'bg-blue-50'   },
     { label: 'Total Documents',    value: stats.totalDocuments    || 0, Icon: ShieldCheck,   color: 'text-indigo-600', bg: 'bg-indigo-50' },
     { label: 'Total Users',        value: stats.totalUsers        || 0, Icon: Users,          color: 'text-purple-600', bg: 'bg-purple-50' },
     { label: 'Pending Scrutiny',   value: (byStatus['SUBMITTED'] || 0) + (byStatus['UNDER_SCRUTINY'] || 0), Icon: Clock, color: 'text-amber-600', bg: 'bg-amber-50' },
@@ -50,7 +52,7 @@ export default function AdminDashboard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-900">{t('dashboard.adminTitle')}</h1>
           <p className="text-gray-500 text-sm">System overview and management</p>
         </div>
         <div className="flex items-center gap-3">
@@ -67,7 +69,7 @@ export default function AdminDashboard() {
             to="/dashboard/admin/users"
             className="flex items-center gap-2 bg-gradient-cecb text-white px-4 py-2 rounded-xl text-sm font-medium"
           >
-            <Users className="w-4 h-4" /> Manage Users
+            <Users className="w-4 h-4" /> {t('dashboard.manageUsers')}
           </Link>
         </div>
       </div>
