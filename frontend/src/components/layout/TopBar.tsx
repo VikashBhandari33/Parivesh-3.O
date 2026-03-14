@@ -29,7 +29,7 @@ export default function TopBar() {
   const handleLogout = async () => {
     try { await api.post('/auth/logout'); } catch { /* ignore */ }
     logout();
-    navigate('/login');
+    navigate('/');
   };
 
   // Close user menu on outside click

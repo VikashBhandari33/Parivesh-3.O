@@ -454,3 +454,21 @@ Please make sure your database server is running at `localhost:5432`.
     at Function.handle (C:\Users\LENOVO\Desktop\Parivesh 3.O\node_modules\express\lib\router\index.js:175:3)
 2026-03-14 11:29:50 [[31merror[39m]: AppError: Invalid email or password
     at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 12:06:27 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 12:06:44 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 12:07:17 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:121:21)
+2026-03-14 12:07:45 [[31merror[39m]: AppError: Email already registered
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:66:23)
+2026-03-14 12:09:14 [[31merror[39m]: AppError: Email already registered
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:66:23)
+2026-03-14 12:09:21 [[31merror[39m]: AppError: Email already registered
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:66:23)
+2026-03-14 12:14:35 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 12:14:51 [[31merror[39m]: AppError: Invalid email or password
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\auth.ts:118:38)
+2026-03-14 14:13:37 [[31merror[39m]: AppError: Payment record not found
+    at <anonymous> (C:\Users\LENOVO\Desktop\Parivesh 3.O\backend\src\routes\payments.ts:91:23)
