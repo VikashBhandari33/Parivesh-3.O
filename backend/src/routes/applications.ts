@@ -47,6 +47,7 @@ const createApplicationSchema = z.object({
   investmentCr: z.number().positive().optional(),
   employmentCount: z.number().int().nonnegative().optional(),
   feeAmount: z.number().positive().optional(),
+  contactPhone: z.string().optional(),
 });
 
 const updateApplicationSchema = createApplicationSchema.partial();

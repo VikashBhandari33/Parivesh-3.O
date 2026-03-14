@@ -25,6 +25,7 @@ const schema = z.object({
   employmentCount: z.preprocess(emptyToUndefined, z.number().int().nonnegative().optional()),
   lat:            z.number().optional(),
   lng:            z.number().optional(),
+  contactPhone:   z.string().min(10, 'Enter a valid 10-digit mobile number').max(15, 'Phone number too long').optional().or(z.literal('')),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -206,6 +207,16 @@ export default function NewApplication() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Project Description</label>
                   <textarea {...register('description')} rows={3} className="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Briefly describe the project…" />
                 </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Contact Mobile Number (for SMS Alerts) *</label>
+                  <input 
+                    {...register('contactPhone')} 
+                    type="tel" 
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary" 
+                    placeholder="e.g. 9876543210" 
+                  />
+                  {errors.contactPhone && <p className="text-xs text-red-500 mt-1">{errors.contactPhone.message}</p>}
+                </div>
               </div>
             )}
 
@@ -342,6 +353,7 @@ export default function NewApplication() {
                     ['Area',         getValues('areaHa') ? `${getValues('areaHa')} ha` : '—'],
                     ['Investment',   getValues('investmentCr') ? `₹${getValues('investmentCr')} Cr` : '—'],
                     ['Location',     lat && lng ? `${lat?.toFixed(4)}, ${lng?.toFixed(4)}` : 'Not set'],
+                    ['Contact Phone', getValues('contactPhone') || '—'],
                   ].map(([label, value]) => (
                     <div key={label} className="flex justify-between py-1 border-b border-gray-100 last:border-0">
                       <span className="text-gray-500">{label}</span>

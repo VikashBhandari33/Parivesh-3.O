@@ -1,4 +1,0 @@
-﻿src/routes/gist.ts(97,25): error TS2351: This expression is not constructable.
-  Type 'typeof import("C:/Users/LENOVO/Desktop/Parivesh 3.O/node_modules/@types/pdfmake/index")' has no construct signatures.
-src/routes/gist.ts(124,90): error TS2344: Type 'typeof import("C:/Users/LENOVO/Desktop/Parivesh 3.O/node_modules/@types/pdfmake/index")' does not satisfy the constraint 'abstract new (...args: any) => any'.
-  Type 'typeof import("C:/Users/LENOVO/Desktop/Parivesh 3.O/node_modules/@types/pdfmake/index")' provides no match for the signature 'new (...args: any): any'.

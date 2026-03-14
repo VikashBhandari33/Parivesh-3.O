@@ -6,11 +6,13 @@ import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import LoginModal from '../components/auth/LoginModal';
 import ServiceDetailModal from '../components/landing/ServiceDetailModal';
+import GrievanceModal from '../components/landing/GrievanceModal';
 import toast from 'react-hot-toast';
 
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isGrievanceOpen, setIsGrievanceOpen] = useState(false);
   const [selectedService, setSelectedService] = useState<any>(null);
   const user = useAuthStore((s) => s.user);
   const navigate = useNavigate();
@@ -37,7 +39,7 @@ export default function LandingPage() {
     { label: t('landing.guide'), action: () => toast.success('Guided Tours and Manuals section coming soon!') },
     { label: t('landing.contact'), action: () => scrollTo(contactRef) },
     { label: t('landing.dashboard'), action: () => { if (user) navigate('/dashboard'); else setIsLoginOpen(true); } },
-    { label: t('landing.complaint'), action: () => toast.success('Public Grievance Portal is currently under maintenance.') },
+    { label: t('landing.complaint'), action: () => setIsGrievanceOpen(true) },
     { label: t('landing.vacancies'), action: () => toast.success('No active vacancies at the moment.') },
   ];
 
@@ -81,10 +83,10 @@ export default function LandingPage() {
   ];
 
   const forms = [
-    { title: t('landing.forms.ec'), size: '2.4 MB', type: 'PDF' },
-    { title: t('landing.forms.fc'), size: '1.8 MB', type: 'PDF' },
-    { title: t('landing.forms.eia'), size: '5.6 MB', type: 'PDF' },
-    { title: t('landing.forms.guide'), size: '1.2 MB', type: 'PDF' },
+    { title: t('landing.forms.ec'), size: '2.4 MB', type: 'PDF', url: '/resources/form1.pdf' },
+    { title: t('landing.forms.fc'), size: '1.8 MB', type: 'PDF', url: '/resources/forma.pdf' },
+    { title: t('landing.forms.eia'), size: '5.6 MB', type: 'PDF', url: '/resources/eia_manual.pdf' },
+    { title: t('landing.forms.guide'), size: '1.2 MB', type: 'PDF', url: '/resources/user_guide.pdf' },
   ];
 
   return (
@@ -377,12 +379,14 @@ export default function LandingPage() {
                 </div>
                 <h5 className="font-bold text-gray-800 mb-1">{form.title}</h5>
                 <p className="text-xs text-gray-400 font-medium">{form.type} • {form.size}</p>
-                <button 
+                <a 
+                  href={form.url}
+                  download={form.url.split('/').pop()}
                   onClick={() => toast.success(`Starting download: ${form.title}`)}
-                  className="mt-6 w-full py-2 bg-white border border-gray-200 rounded-lg text-xs font-bold text-gray-600 hover:text-green-700 hover:border-green-200 transition-colors"
+                  className="mt-6 w-full py-2 bg-white border border-gray-200 rounded-lg text-xs font-bold text-gray-600 hover:text-green-700 hover:border-green-200 transition-colors flex items-center justify-center"
                 >
                   Download Now
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -485,7 +489,7 @@ export default function LandingPage() {
               <li onClick={() => toast.success('Hyperlinking Policy')} className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
                 <ChevronRight className="w-3 h-3 text-green-500 group-hover:translate-x-1 transition-transform" /> Hyperlinking Policy
               </li>
-              <li onClick={() => toast.success('Public Grievance')} className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
+              <li onClick={() => setIsGrievanceOpen(true)} className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
                 <ChevronRight className="w-3 h-3 text-green-500 group-hover:translate-x-1 transition-transform" /> Complaints & Feedback
               </li>
               <li onClick={() => toast.success('Active Vacancies')} className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
@@ -538,6 +542,12 @@ export default function LandingPage() {
             onClose={() => setSelectedService(null)} 
             onApply={() => setIsLoginOpen(true)}
           />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {isGrievanceOpen && (
+          <GrievanceModal onClose={() => setIsGrievanceOpen(false)} />
         )}
       </AnimatePresence>
 

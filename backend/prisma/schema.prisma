@@ -100,6 +100,7 @@ model Application {
   // Fee
   feeAmount   Float?  @map("fee_amount")
   feePaid     Boolean @default(false) @map("fee_paid")
+  contactPhone String? @map("contact_phone")
 
   // MoM
   gistText    String? @map("gist_text")
