@@ -1,1 +1,0 @@
-{"version":3,"file":"satellite.controller.d.ts","sourceRoot":"","sources":["../../src/controllers/satellite.controller.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAG5C;;GAEG;AACH,eAAO,MAAM,mBAAmB;IAC9B;;OAEG;qBACoB,OAAO,OAAO,QAAQ;IAgB7C;;OAEG;4BAC2B,OAAO,OAAO,QAAQ;CAUrD,CAAC"}
