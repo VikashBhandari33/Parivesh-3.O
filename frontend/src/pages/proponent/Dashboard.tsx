@@ -139,7 +139,7 @@ export default function ProponentDashboard() {
                   </div>
                   <div className="flex items-center gap-2 mt-1">
                     <StatusBadge status={app.status} />
-                    {app.status === 'SUBMITTED' && !app.feePaid && (
+                    {app.status !== 'DRAFT' && !app.feePaid && (
                       <span className="text-xs text-orange-600 font-medium bg-orange-50 px-2 py-0.5 rounded-full">
                         Fee Pending
                       </span>
@@ -158,7 +158,7 @@ export default function ProponentDashboard() {
                       Submit
                     </button>
                   )}
-                  {app.status === 'SUBMITTED' && !app.feePaid && (
+                  {app.status !== 'DRAFT' && !app.feePaid && (
                     <Link
                       to={`/dashboard/proponent/payment/${app.id}`}
                       className="text-xs bg-amber-500 text-white px-3 py-1.5 rounded-lg hover:bg-amber-600 transition-colors"

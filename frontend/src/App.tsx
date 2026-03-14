@@ -5,6 +5,7 @@ import { useSocketSetup } from './hooks/useSocket';
 // Auth pages
 import LoginPage from './pages/auth/Login';
 import RegisterPage from './pages/auth/Register';
+import LandingPage from './pages/LandingPage';
 
 // Layouts
 import AppLayout from './components/layout/AppLayout';
@@ -33,21 +34,21 @@ import ApplicationList from './pages/ApplicationList';
 
 function RequireAuth({ children, roles }: { children: React.ReactNode; roles?: string[] }) {
   const user = useAuthStore((s) => s.user);
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <Navigate to="/" replace />;
   if (roles && !roles.includes(user.role)) return <Navigate to="/dashboard" replace />;
   return <>{children}</>;
 }
 
 function RoleRedirect() {
   const user = useAuthStore((s) => s.user);
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <Navigate to="/" replace />;
   const roleRoutes: Record<string, string> = {
     PROPONENT: '/dashboard/proponent',
     SCRUTINY: '/dashboard/scrutiny',
     MOM_TEAM: '/dashboard/mom',
     ADMIN: '/dashboard/admin',
   };
-  return <Navigate to={roleRoutes[user.role] || '/login'} replace />;
+  return <Navigate to={roleRoutes[user.role] || '/'} replace />;
 }
 
 export default function App() {
@@ -56,9 +57,9 @@ export default function App() {
   return (
     <Routes>
       {/* Public */}
+      <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
-      <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
       {/* Protected */}
       <Route path="/dashboard" element={<RequireAuth><AppLayout /></RequireAuth>}>

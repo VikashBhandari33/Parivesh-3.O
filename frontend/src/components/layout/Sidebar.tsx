@@ -49,7 +49,7 @@ export default function Sidebar() {
       await api.post('/auth/logout');
     } catch { /* ignore */ }
     logout();
-    navigate('/login');
+    navigate('/');
     toast.success('Logged out successfully');
   };
 
