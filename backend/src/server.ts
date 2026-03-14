@@ -27,6 +27,7 @@ import adminRoutes from './routes/admin';
 import gisRoutes from './routes/gis';
 import notificationRoutes from './routes/notifications';
 import satelliteRoutes from './routes/satellite';
+import predictionRoutes from './routes/prediction';
 import './services/gistQueue';
 import './services/documentVerificationQueue';
 
@@ -86,6 +87,7 @@ app.use('/api/audit', apiLimiter, auditRoutes);
 app.use('/api/admin', apiLimiter, adminRoutes);
 app.use('/api/gis', apiLimiter, gisRoutes);
 app.use('/api/satellite', apiLimiter, satelliteRoutes);
+app.use('/api/prediction', apiLimiter, predictionRoutes);
 app.use('/api/notifications', apiLimiter, notificationRoutes);
 
 // ─── Static uploads (local storage fallback) ──────────────────────────────────

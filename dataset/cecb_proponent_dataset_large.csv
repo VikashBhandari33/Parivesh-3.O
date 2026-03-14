@@ -1,0 +1,1001 @@
+proponent_agency,project_location,project_type,area_hectare,submission_date,approval_date,approval_status,eds_count,environmental_risk_score
+Sunrise Quarry Co,Rajnandgaon,Infrastructure,13.71,2024-02-21,,Referred,1,0.55
+EcoBuild Developers,Ambikapur,Sand Mining,4.74,2023-08-24,,EDS,2,0.45
+EcoBuild Developers,Jagdalpur,Sand Mining,1.99,2024-10-29,,Rejected,0,0.8
+Riverbed Minerals Pvt,Korba,Infrastructure,1.59,2024-03-05,,EDS,3,0.57
+EcoBuild Developers,Raigarh,Infrastructure,14.6,2024-01-31,,Referred,3,0.57
+Raigarh Aggregates,Ambikapur,Brick Kiln,13.24,2024-06-09,,Under Scrutiny,0,0.54
+Mahanadi Sand Works,Raigarh,Limestone Quarry,13.41,2023-06-02,,MoM Generated,2,0.86
+Sunrise Quarry Co,Korba,Sand Mining,1.49,2023-08-08,,MoM Generated,3,0.66
+Chhattisgarh Infra Group,Korba,Infrastructure,5.34,2023-05-01,,Rejected,0,0.63
+Korba Limestone Corp,Raipur,Industrial Plant,9.38,2023-04-15,,Referred,3,0.62
+Shiv Brick Industries,Kanker,Sand Mining,9.44,2024-09-16,,MoM Generated,3,0.81
+Chhattisgarh Infra Group,Ambikapur,Brick Kiln,6.34,2023-01-01,,EDS,1,0.84
+Korba Limestone Corp,Rajnandgaon,Brick Kiln,11.52,2024-10-22,,Referred,0,0.43
+Green Earth Infrastructure,Bilaspur,Industrial Plant,10.54,2023-08-05,,Rejected,1,0.22
+EcoBuild Developers,Bilaspur,Sand Mining,12.54,2024-07-16,,Under Scrutiny,0,0.58
+Chhattisgarh Infra Group,Kanker,Brick Kiln,14.62,2023-10-12,,Rejected,0,0.8
+Shakti Infra Projects,Kanker,Industrial Plant,6.02,2023-09-03,2023-11-15,Approved,1,0.86
+Bastar Natural Resources,Raigarh,Limestone Quarry,2.56,2023-12-07,,EDS,1,0.3
+Mahanadi Sand Works,Rajnandgaon,Sand Mining,11.1,2023-05-17,,EDS,2,0.39
+Bastar Natural Resources,Bilaspur,Infrastructure,9.2,2023-04-26,,Rejected,0,0.66
+Sunrise Quarry Co,Ambikapur,Industrial Plant,8.73,2023-07-22,,Under Scrutiny,0,0.81
+Sunrise Quarry Co,Durg,Limestone Quarry,5.06,2024-11-12,,MoM Generated,3,0.43
+Bastar Natural Resources,Durg,Sand Mining,12.65,2024-05-11,,Referred,2,0.34
+Durg Construction Pvt Ltd,Korba,Infrastructure,5.5,2024-05-24,2024-06-18,Approved,3,0.8
+Sunrise Quarry Co,Kanker,Brick Kiln,9.93,2024-06-22,,Referred,1,0.83
+ABC Mining Ltd,Bilaspur,Industrial Plant,5.22,2023-12-02,,MoM Generated,3,0.15
+Mahanadi Sand Works,Kanker,Infrastructure,7.28,2024-08-23,,Rejected,1,0.32
+Shakti Infra Projects,Raigarh,Limestone Quarry,4.14,2023-11-26,2023-12-28,Approved,3,0.21
+Raigarh Aggregates,Raipur,Limestone Quarry,13.34,2023-07-03,2023-08-06,Approved,0,0.22
+Central India Mining Co,Kanker,Infrastructure,2.04,2023-04-27,,EDS,0,0.56
+Shakti Infra Projects,Ambikapur,Brick Kiln,5.62,2024-02-10,,Referred,3,0.86
+EcoBuild Developers,Durg,Infrastructure,11.18,2023-09-12,,EDS,3,0.33
+Durg Construction Pvt Ltd,Ambikapur,Brick Kiln,3.81,2024-09-16,,Rejected,2,0.21
+Raigarh Aggregates,Korba,Industrial Plant,4.07,2024-09-24,2024-11-05,Approved,3,0.22
+EcoStone Extractors,Ambikapur,Infrastructure,6.36,2024-01-05,,EDS,2,0.25
+Shiv Brick Industries,Raigarh,Limestone Quarry,11.07,2023-10-03,,Under Scrutiny,2,0.83
+Green Earth Infrastructure,Jagdalpur,Limestone Quarry,1.55,2024-08-03,,MoM Generated,3,0.16
+Bastar Natural Resources,Raipur,Infrastructure,13.94,2023-11-15,,Referred,3,0.86
+Central India Mining Co,Jagdalpur,Brick Kiln,1.07,2023-02-18,,EDS,1,0.24
+Bastar Natural Resources,Rajnandgaon,Sand Mining,9.84,2023-06-29,,Referred,3,0.21
+ABC Mining Ltd,Raipur,Industrial Plant,9.99,2023-12-26,,Rejected,2,0.8
+Durg Construction Pvt Ltd,Kanker,Limestone Quarry,6.62,2023-06-27,,EDS,0,0.55
+Bastar Natural Resources,Rajnandgaon,Sand Mining,4.68,2023-10-03,,Rejected,3,0.27
+Riverbed Minerals Pvt,Bilaspur,Brick Kiln,5.94,2023-06-21,,Referred,2,0.24
+Shiv Brick Industries,Rajnandgaon,Sand Mining,12.14,2024-04-21,,EDS,0,0.46
+Shiv Brick Industries,Bilaspur,Limestone Quarry,7.95,2023-07-08,,MoM Generated,1,0.78
+Chhattisgarh Infra Group,Ambikapur,Industrial Plant,7.43,2023-10-09,,EDS,3,0.86
+Shakti Infra Projects,Korba,Limestone Quarry,13.34,2024-06-30,,Rejected,2,0.27
+Durg Construction Pvt Ltd,Raipur,Infrastructure,4.05,2024-04-19,2024-06-14,Approved,3,0.17
+Mahanadi Sand Works,Korba,Limestone Quarry,5.41,2023-11-27,,MoM Generated,1,0.26
+EcoStone Extractors,Raipur,Infrastructure,5.99,2023-08-20,,Rejected,0,0.39
+ABC Mining Ltd,Raipur,Brick Kiln,3.23,2023-04-15,,Rejected,1,0.69
+Shiv Brick Industries,Bilaspur,Infrastructure,4.13,2024-09-08,,Under Scrutiny,1,0.56
+Chhattisgarh Infra Group,Ambikapur,Industrial Plant,7.53,2023-07-25,,Referred,0,0.83
+Korba Limestone Corp,Kanker,Infrastructure,13.81,2023-07-02,,MoM Generated,1,0.31
+EcoStone Extractors,Bilaspur,Limestone Quarry,4.74,2023-08-15,2023-11-17,Approved,2,0.45
+Raigarh Aggregates,Kanker,Infrastructure,2.71,2023-04-01,,Under Scrutiny,3,0.19
+Chhattisgarh Infra Group,Durg,Industrial Plant,5.63,2024-07-17,,EDS,3,0.21
+Chhattisgarh Infra Group,Rajnandgaon,Brick Kiln,1.41,2023-02-26,,Referred,1,0.69
+Raigarh Aggregates,Rajnandgaon,Infrastructure,10.13,2023-05-15,2023-06-19,Approved,2,0.47
+ABC Mining Ltd,Jagdalpur,Sand Mining,10.11,2023-01-23,2023-03-11,Approved,1,0.5
+ABC Mining Ltd,Raigarh,Limestone Quarry,11.91,2023-02-02,,Referred,0,0.51
+Durg Construction Pvt Ltd,Korba,Brick Kiln,6.41,2023-12-26,,Under Scrutiny,2,0.74
+Shakti Infra Projects,Ambikapur,Industrial Plant,8.08,2024-06-18,,Referred,3,0.75
+Durg Construction Pvt Ltd,Durg,Infrastructure,3.04,2023-08-23,2023-10-19,Approved,2,0.24
+Raigarh Aggregates,Rajnandgaon,Infrastructure,3.67,2024-06-27,2024-09-23,Approved,1,0.43
+ABC Mining Ltd,Jagdalpur,Brick Kiln,5.19,2024-08-13,,Under Scrutiny,0,0.4
+Shakti Infra Projects,Jagdalpur,Sand Mining,8.62,2023-12-08,2024-02-02,Approved,0,0.83
+ABC Mining Ltd,Ambikapur,Industrial Plant,13.72,2024-04-04,,EDS,2,0.81
+Mahanadi Sand Works,Raipur,Industrial Plant,14.8,2023-09-02,2023-09-20,Approved,2,0.13
+Raigarh Aggregates,Kanker,Limestone Quarry,6.89,2024-10-14,,Referred,3,0.26
+EcoBuild Developers,Raipur,Infrastructure,13.18,2024-10-15,,EDS,2,0.67
+Riverbed Minerals Pvt,Rajnandgaon,Industrial Plant,7.58,2023-07-07,,Rejected,3,0.46
+Central India Mining Co,Ambikapur,Infrastructure,2.12,2024-03-26,,Referred,2,0.52
+Durg Construction Pvt Ltd,Ambikapur,Brick Kiln,2.55,2024-09-13,,EDS,3,0.4
+Korba Limestone Corp,Kanker,Sand Mining,2.33,2024-03-15,,Rejected,1,0.18
+Riverbed Minerals Pvt,Korba,Infrastructure,5.02,2024-10-26,,MoM Generated,0,0.24
+Bastar Natural Resources,Jagdalpur,Brick Kiln,9.14,2023-03-26,,Referred,2,0.52
+EcoStone Extractors,Durg,Infrastructure,12.67,2024-06-17,,MoM Generated,2,0.51
+ABC Mining Ltd,Bilaspur,Sand Mining,1.42,2023-05-10,,Under Scrutiny,0,0.8
+Chhattisgarh Infra Group,Bilaspur,Limestone Quarry,4.46,2024-01-15,,Rejected,2,0.49
+Korba Limestone Corp,Bilaspur,Brick Kiln,13.99,2023-12-11,,Rejected,3,0.6
+Chhattisgarh Infra Group,Durg,Limestone Quarry,6.65,2023-05-25,,Referred,3,0.34
+Central India Mining Co,Raipur,Limestone Quarry,10.71,2024-06-08,,MoM Generated,0,0.82
+Korba Limestone Corp,Raipur,Brick Kiln,7.1,2023-06-13,,EDS,1,0.52
+ABC Mining Ltd,Kanker,Brick Kiln,1.18,2023-04-17,,Referred,1,0.43
+Durg Construction Pvt Ltd,Raigarh,Infrastructure,10.04,2024-02-21,,Under Scrutiny,1,0.32
+Shiv Brick Industries,Bilaspur,Sand Mining,13.41,2024-11-15,,Rejected,2,0.67
+Bastar Natural Resources,Raigarh,Brick Kiln,12.27,2024-07-19,2024-10-12,Approved,0,0.28
+Mahanadi Sand Works,Ambikapur,Infrastructure,10.21,2024-08-25,,Rejected,3,0.56
+Durg Construction Pvt Ltd,Raigarh,Limestone Quarry,5.59,2023-05-19,,MoM Generated,3,0.17
+Mahanadi Sand Works,Durg,Brick Kiln,9.77,2023-08-21,,Under Scrutiny,0,0.28
+EcoBuild Developers,Raipur,Infrastructure,5.78,2023-04-01,2023-05-05,Approved,0,0.84
+Durg Construction Pvt Ltd,Durg,Industrial Plant,3.39,2024-09-18,,Under Scrutiny,3,0.73
+Raigarh Aggregates,Bilaspur,Infrastructure,6.54,2023-07-01,,Referred,2,0.15
+Shiv Brick Industries,Jagdalpur,Brick Kiln,12.37,2023-04-05,,EDS,1,0.28
+Bastar Natural Resources,Raipur,Sand Mining,9.31,2023-07-16,,EDS,0,0.61
+Chhattisgarh Infra Group,Rajnandgaon,Brick Kiln,8.86,2023-08-19,,MoM Generated,3,0.11
+EcoStone Extractors,Bilaspur,Industrial Plant,9.3,2024-02-20,,Under Scrutiny,0,0.58
+Sunrise Quarry Co,Raigarh,Limestone Quarry,4.96,2023-06-02,,Under Scrutiny,1,0.46
+Sunrise Quarry Co,Raipur,Industrial Plant,13.48,2024-09-19,,EDS,0,0.36
+ABC Mining Ltd,Korba,Industrial Plant,14.6,2023-04-15,,Referred,2,0.13
+EcoStone Extractors,Raipur,Industrial Plant,6.19,2023-03-30,,EDS,1,0.59
+Mahanadi Sand Works,Jagdalpur,Industrial Plant,9.18,2023-04-10,,EDS,1,0.61
+Shiv Brick Industries,Raipur,Brick Kiln,2.92,2024-11-05,,Rejected,3,0.14
+ABC Mining Ltd,Raipur,Limestone Quarry,9.7,2023-12-29,,Under Scrutiny,2,0.54
+ABC Mining Ltd,Bilaspur,Infrastructure,7.65,2023-03-05,,Referred,0,0.35
+Green Earth Infrastructure,Ambikapur,Infrastructure,1.88,2024-02-01,,Referred,0,0.83
+Shakti Infra Projects,Ambikapur,Limestone Quarry,2.8,2023-03-06,,Referred,0,0.18
+Shiv Brick Industries,Kanker,Sand Mining,8.73,2024-01-21,,Under Scrutiny,1,0.88
+Green Earth Infrastructure,Rajnandgaon,Brick Kiln,6.54,2024-01-23,,Referred,3,0.14
+ABC Mining Ltd,Bilaspur,Limestone Quarry,5.59,2023-04-18,,Under Scrutiny,0,0.76
+Chhattisgarh Infra Group,Rajnandgaon,Infrastructure,12.32,2023-07-18,,Referred,3,0.75
+ABC Mining Ltd,Durg,Sand Mining,7.25,2024-08-14,,MoM Generated,3,0.79
+EcoStone Extractors,Durg,Sand Mining,9.98,2023-07-21,,Rejected,1,0.6
+Bastar Natural Resources,Raipur,Limestone Quarry,7.98,2024-08-20,,Under Scrutiny,0,0.42
+Sunrise Quarry Co,Durg,Brick Kiln,12.48,2024-08-25,,EDS,2,0.53
+EcoStone Extractors,Bilaspur,Industrial Plant,13.9,2023-10-16,,EDS,0,0.22
+ABC Mining Ltd,Kanker,Limestone Quarry,13.32,2023-11-11,,Referred,0,0.44
+Shakti Infra Projects,Ambikapur,Limestone Quarry,3.68,2023-01-18,,MoM Generated,2,0.3
+Raigarh Aggregates,Korba,Brick Kiln,11.84,2024-11-14,,Referred,0,0.55
+EcoBuild Developers,Kanker,Brick Kiln,12.72,2023-11-19,,Under Scrutiny,3,0.86
+Raigarh Aggregates,Raipur,Brick Kiln,9.87,2023-06-06,2023-06-21,Approved,0,0.68
+EcoStone Extractors,Jagdalpur,Industrial Plant,2.12,2023-08-31,,MoM Generated,0,0.33
+Bastar Natural Resources,Bilaspur,Brick Kiln,3.3,2023-12-07,,Referred,2,0.31
+Durg Construction Pvt Ltd,Korba,Limestone Quarry,13.26,2023-11-14,,EDS,2,0.23
+ABC Mining Ltd,Raigarh,Limestone Quarry,11.13,2023-07-28,,MoM Generated,3,0.11
+Durg Construction Pvt Ltd,Korba,Industrial Plant,11.11,2024-03-15,,Under Scrutiny,3,0.22
+Shiv Brick Industries,Raigarh,Limestone Quarry,6.96,2024-10-13,,Referred,0,0.68
+Shiv Brick Industries,Ambikapur,Industrial Plant,2.02,2024-02-27,,Rejected,1,0.29
+EcoStone Extractors,Raipur,Industrial Plant,11.53,2023-03-07,2023-06-29,Approved,0,0.53
+EcoBuild Developers,Rajnandgaon,Limestone Quarry,13.86,2023-09-02,,Rejected,1,0.64
+Chhattisgarh Infra Group,Durg,Infrastructure,1.29,2024-11-02,,MoM Generated,3,0.41
+Riverbed Minerals Pvt,Durg,Infrastructure,7.19,2023-10-09,2024-01-04,Approved,0,0.33
+Chhattisgarh Infra Group,Ambikapur,Limestone Quarry,3.41,2024-08-30,,Referred,2,0.83
+Raigarh Aggregates,Ambikapur,Industrial Plant,3.87,2024-11-06,,MoM Generated,1,0.37
+Korba Limestone Corp,Raipur,Infrastructure,1.9,2023-11-02,2024-01-28,Approved,1,0.56
+Shakti Infra Projects,Raipur,Sand Mining,14.88,2023-07-12,,EDS,2,0.76
+Green Earth Infrastructure,Bilaspur,Industrial Plant,1.5,2023-04-21,,Under Scrutiny,3,0.21
+Raigarh Aggregates,Ambikapur,Infrastructure,13.33,2024-08-26,,EDS,1,0.47
+Shakti Infra Projects,Korba,Sand Mining,8.91,2024-03-13,,Under Scrutiny,1,0.32
+ABC Mining Ltd,Korba,Sand Mining,3.43,2023-06-15,,MoM Generated,3,0.52
+Durg Construction Pvt Ltd,Bilaspur,Limestone Quarry,14.3,2023-12-02,,Under Scrutiny,2,0.6
+Shakti Infra Projects,Rajnandgaon,Brick Kiln,1.47,2024-02-08,,MoM Generated,1,0.25
+EcoBuild Developers,Jagdalpur,Limestone Quarry,11.15,2023-01-06,,Rejected,0,0.19
+Riverbed Minerals Pvt,Korba,Sand Mining,6.53,2023-08-22,,Rejected,3,0.86
+EcoStone Extractors,Raipur,Sand Mining,6.4,2024-03-20,,MoM Generated,2,0.43
+Durg Construction Pvt Ltd,Jagdalpur,Infrastructure,3.96,2023-03-28,2023-07-10,Approved,1,0.6
+Korba Limestone Corp,Rajnandgaon,Brick Kiln,12.52,2023-12-26,,EDS,3,0.15
+Durg Construction Pvt Ltd,Kanker,Limestone Quarry,7.57,2024-08-07,,Under Scrutiny,3,0.26
+Durg Construction Pvt Ltd,Durg,Infrastructure,14.51,2023-10-19,,MoM Generated,1,0.51
+Raigarh Aggregates,Raigarh,Infrastructure,4.36,2023-05-20,,Rejected,0,0.31
+Central India Mining Co,Raipur,Limestone Quarry,7.24,2023-03-12,,Rejected,2,0.31
+Shiv Brick Industries,Ambikapur,Brick Kiln,2.45,2024-06-22,,Referred,1,0.73
+ABC Mining Ltd,Ambikapur,Industrial Plant,14.83,2023-08-31,,Rejected,0,0.62
+Shiv Brick Industries,Bilaspur,Limestone Quarry,8.03,2023-09-21,2023-10-15,Approved,3,0.54
+Bastar Natural Resources,Rajnandgaon,Sand Mining,3.78,2024-06-29,,EDS,3,0.33
+Central India Mining Co,Bilaspur,Industrial Plant,12.32,2024-04-06,,Rejected,0,0.31
+ABC Mining Ltd,Raigarh,Industrial Plant,9.93,2023-05-13,,Under Scrutiny,0,0.41
+Shakti Infra Projects,Rajnandgaon,Brick Kiln,6.34,2023-12-18,,Under Scrutiny,0,0.79
+Durg Construction Pvt Ltd,Rajnandgaon,Brick Kiln,3.25,2023-07-24,,MoM Generated,0,0.67
+Mahanadi Sand Works,Bilaspur,Infrastructure,2.57,2023-01-29,,Rejected,1,0.59
+Raigarh Aggregates,Ambikapur,Brick Kiln,2.64,2023-11-14,,Referred,0,0.83
+Sunrise Quarry Co,Durg,Brick Kiln,13.5,2024-05-27,,MoM Generated,0,0.71
+Raigarh Aggregates,Korba,Limestone Quarry,12.12,2023-03-24,,EDS,1,0.43
+Chhattisgarh Infra Group,Bilaspur,Infrastructure,8.23,2023-12-14,,Referred,2,0.34
+Chhattisgarh Infra Group,Durg,Sand Mining,9.22,2023-06-04,,MoM Generated,1,0.64
+EcoStone Extractors,Bilaspur,Infrastructure,6.46,2023-02-01,,Under Scrutiny,0,0.64
+Chhattisgarh Infra Group,Korba,Brick Kiln,13.15,2023-09-17,,MoM Generated,3,0.64
+Central India Mining Co,Korba,Limestone Quarry,3.94,2023-02-08,,EDS,2,0.27
+EcoStone Extractors,Ambikapur,Brick Kiln,11.29,2024-06-14,,Referred,3,0.72
+EcoStone Extractors,Ambikapur,Sand Mining,12.11,2024-03-29,2024-06-30,Approved,0,0.32
+Raigarh Aggregates,Raigarh,Brick Kiln,1.64,2023-03-17,,Rejected,1,0.62
+Green Earth Infrastructure,Raigarh,Brick Kiln,11.31,2023-12-14,2023-12-29,Approved,3,0.45
+Bastar Natural Resources,Kanker,Brick Kiln,8.85,2023-05-03,,Under Scrutiny,3,0.64
+EcoStone Extractors,Bilaspur,Brick Kiln,10.96,2024-04-20,,Referred,0,0.79
+Korba Limestone Corp,Raipur,Limestone Quarry,8.18,2023-01-14,2023-03-31,Approved,0,0.79
+Sunrise Quarry Co,Durg,Brick Kiln,3.8,2023-04-25,,Rejected,3,0.35
+Korba Limestone Corp,Raipur,Infrastructure,12.93,2024-05-26,,Rejected,3,0.66
+Shakti Infra Projects,Durg,Infrastructure,13.91,2023-07-07,,EDS,3,0.53
+Central India Mining Co,Korba,Sand Mining,1.73,2024-03-11,,EDS,0,0.23
+Sunrise Quarry Co,Korba,Limestone Quarry,12.19,2024-08-22,,Referred,1,0.83
+EcoStone Extractors,Durg,Limestone Quarry,11.35,2024-06-05,,MoM Generated,3,0.15
+Green Earth Infrastructure,Jagdalpur,Sand Mining,14.26,2023-09-20,,Referred,1,0.3
+Bastar Natural Resources,Korba,Industrial Plant,11.87,2024-03-20,,Under Scrutiny,3,0.79
+Raigarh Aggregates,Durg,Limestone Quarry,5.47,2024-06-20,,Referred,0,0.78
+Riverbed Minerals Pvt,Durg,Sand Mining,6.88,2023-06-18,,MoM Generated,3,0.74
+Mahanadi Sand Works,Rajnandgaon,Industrial Plant,14.31,2023-03-19,,MoM Generated,3,0.31
+Central India Mining Co,Bilaspur,Sand Mining,2.26,2024-04-02,,Under Scrutiny,1,0.17
+EcoBuild Developers,Kanker,Infrastructure,9.25,2024-11-21,,Rejected,2,0.25
+Central India Mining Co,Kanker,Industrial Plant,4.63,2024-06-22,,MoM Generated,2,0.77
+Shiv Brick Industries,Jagdalpur,Brick Kiln,6.44,2024-01-16,,Referred,0,0.64
+EcoStone Extractors,Raigarh,Limestone Quarry,12.45,2023-11-16,,MoM Generated,0,0.64
+Shakti Infra Projects,Durg,Industrial Plant,3.13,2024-02-24,,Rejected,1,0.34
+Shiv Brick Industries,Rajnandgaon,Limestone Quarry,14.9,2024-11-19,,EDS,1,0.67
+Chhattisgarh Infra Group,Rajnandgaon,Sand Mining,5.47,2024-08-23,,MoM Generated,0,0.2
+Shiv Brick Industries,Ambikapur,Industrial Plant,3.92,2024-07-28,,Under Scrutiny,1,0.45
+Chhattisgarh Infra Group,Raigarh,Industrial Plant,6.29,2024-03-03,2024-06-20,Approved,2,0.6
+Riverbed Minerals Pvt,Korba,Sand Mining,8.61,2024-02-16,,Under Scrutiny,1,0.47
+Korba Limestone Corp,Korba,Brick Kiln,3.72,2024-05-02,,MoM Generated,2,0.33
+Shakti Infra Projects,Ambikapur,Brick Kiln,7.29,2024-11-05,,Rejected,1,0.27
+Mahanadi Sand Works,Rajnandgaon,Brick Kiln,14.37,2024-11-23,,Referred,2,0.62
+Chhattisgarh Infra Group,Raigarh,Industrial Plant,14.53,2023-03-16,,Rejected,1,0.26
+Chhattisgarh Infra Group,Rajnandgaon,Limestone Quarry,10.58,2023-06-15,2023-09-05,Approved,3,0.86
+Green Earth Infrastructure,Bilaspur,Industrial Plant,12.94,2024-06-06,,MoM Generated,2,0.81
+Shiv Brick Industries,Raigarh,Sand Mining,10.93,2023-07-03,,EDS,0,0.31
+Green Earth Infrastructure,Korba,Infrastructure,10.66,2024-08-05,,MoM Generated,3,0.34
+Green Earth Infrastructure,Korba,Industrial Plant,5.8,2023-11-06,,Rejected,2,0.41
+Central India Mining Co,Durg,Limestone Quarry,2.87,2023-07-19,,Referred,2,0.62
+Shiv Brick Industries,Raigarh,Brick Kiln,8.03,2024-03-08,,MoM Generated,2,0.51
+Chhattisgarh Infra Group,Raigarh,Industrial Plant,5.86,2023-10-14,,Rejected,0,0.7
+Durg Construction Pvt Ltd,Durg,Limestone Quarry,13.11,2024-06-21,,MoM Generated,2,0.57
+Bastar Natural Resources,Jagdalpur,Brick Kiln,4.95,2023-09-15,,Under Scrutiny,1,0.53
+Riverbed Minerals Pvt,Kanker,Limestone Quarry,8.21,2024-05-30,,EDS,0,0.31
+Shiv Brick Industries,Jagdalpur,Limestone Quarry,7.36,2023-02-01,,Referred,0,0.3
+Chhattisgarh Infra Group,Durg,Industrial Plant,4.97,2023-03-08,2023-07-03,Approved,0,0.85
+Korba Limestone Corp,Rajnandgaon,Limestone Quarry,9.33,2024-05-26,,EDS,3,0.48
+Raigarh Aggregates,Raipur,Brick Kiln,13.19,2024-08-22,2024-11-26,Approved,3,0.35
+Shakti Infra Projects,Raigarh,Infrastructure,13.47,2023-12-19,,EDS,3,0.81
+Korba Limestone Corp,Durg,Sand Mining,12.33,2024-08-13,,MoM Generated,1,0.61
+Central India Mining Co,Rajnandgaon,Limestone Quarry,8.07,2024-01-13,2024-03-26,Approved,2,0.76
+Durg Construction Pvt Ltd,Korba,Industrial Plant,9.08,2023-09-17,,Referred,2,0.41
+Central India Mining Co,Bilaspur,Limestone Quarry,4.63,2023-06-06,2023-06-29,Approved,3,0.5
+Green Earth Infrastructure,Rajnandgaon,Industrial Plant,7.16,2024-08-24,,MoM Generated,3,0.37
+Central India Mining Co,Ambikapur,Limestone Quarry,14.12,2023-08-11,,EDS,1,0.19
+Raigarh Aggregates,Kanker,Limestone Quarry,10.52,2023-07-02,2023-07-24,Approved,0,0.42
+Chhattisgarh Infra Group,Raigarh,Infrastructure,1.43,2023-05-03,2023-06-11,Approved,2,0.39
+Shiv Brick Industries,Ambikapur,Limestone Quarry,1.86,2024-03-31,,EDS,1,0.83
+Durg Construction Pvt Ltd,Rajnandgaon,Limestone Quarry,2.31,2024-05-13,,Referred,0,0.66
+Shakti Infra Projects,Ambikapur,Brick Kiln,9.82,2023-06-03,,MoM Generated,0,0.82
+Bastar Natural Resources,Bilaspur,Industrial Plant,7.49,2023-08-09,,MoM Generated,3,0.48
+Mahanadi Sand Works,Ambikapur,Infrastructure,5.87,2023-03-28,2023-05-04,Approved,2,0.8
+ABC Mining Ltd,Raigarh,Infrastructure,5.13,2023-12-17,,Rejected,3,0.59
+Sunrise Quarry Co,Ambikapur,Industrial Plant,14.93,2023-09-08,,Rejected,3,0.66
+Riverbed Minerals Pvt,Korba,Infrastructure,5.78,2023-09-28,,Referred,0,0.13
+Shiv Brick Industries,Raipur,Industrial Plant,4.63,2024-02-17,,MoM Generated,1,0.6
+EcoBuild Developers,Bilaspur,Limestone Quarry,1.74,2023-02-19,,MoM Generated,3,0.73
+EcoStone Extractors,Korba,Sand Mining,6.64,2023-08-17,,Referred,3,0.21
+Korba Limestone Corp,Korba,Sand Mining,8.82,2023-05-18,,Under Scrutiny,0,0.53
+Riverbed Minerals Pvt,Korba,Industrial Plant,10.34,2024-07-18,,Referred,3,0.88
+Mahanadi Sand Works,Korba,Infrastructure,10.4,2024-01-15,,Under Scrutiny,2,0.4
+EcoStone Extractors,Rajnandgaon,Brick Kiln,8.76,2023-11-11,2024-01-26,Approved,3,0.57
+EcoBuild Developers,Ambikapur,Limestone Quarry,5.97,2024-10-23,,MoM Generated,2,0.2
+Green Earth Infrastructure,Jagdalpur,Industrial Plant,6.49,2023-09-13,,MoM Generated,1,0.21
+EcoBuild Developers,Korba,Brick Kiln,8.84,2024-03-07,,Referred,2,0.25
+Mahanadi Sand Works,Kanker,Limestone Quarry,3.26,2023-10-20,,Rejected,1,0.3
+Shakti Infra Projects,Kanker,Infrastructure,5.03,2024-04-25,2024-07-30,Approved,1,0.74
+Korba Limestone Corp,Ambikapur,Sand Mining,8.63,2024-07-07,,EDS,3,0.18
+Durg Construction Pvt Ltd,Ambikapur,Sand Mining,13.15,2024-04-29,,MoM Generated,0,0.75
+Bastar Natural Resources,Ambikapur,Limestone Quarry,10.3,2023-02-26,,EDS,1,0.48
+EcoBuild Developers,Korba,Industrial Plant,9.11,2023-04-04,,MoM Generated,3,0.26
+Central India Mining Co,Rajnandgaon,Industrial Plant,12.6,2024-06-27,,Referred,1,0.53
+Sunrise Quarry Co,Korba,Limestone Quarry,3.53,2023-06-04,,MoM Generated,1,0.45
+Green Earth Infrastructure,Bilaspur,Sand Mining,9.27,2024-08-11,,Rejected,2,0.26
+EcoBuild Developers,Raigarh,Brick Kiln,2.15,2024-04-30,,Under Scrutiny,3,0.55
+Mahanadi Sand Works,Durg,Brick Kiln,12.55,2023-08-30,,Under Scrutiny,1,0.35
+Chhattisgarh Infra Group,Kanker,Industrial Plant,14.15,2023-11-07,,Under Scrutiny,0,0.18
+ABC Mining Ltd,Rajnandgaon,Sand Mining,3.93,2023-02-17,,EDS,1,0.69
+EcoBuild Developers,Raipur,Infrastructure,9.49,2024-04-17,,EDS,2,0.82
+Central India Mining Co,Durg,Infrastructure,9.33,2023-07-01,,Under Scrutiny,2,0.86
+Central India Mining Co,Durg,Infrastructure,9.98,2023-02-17,,Under Scrutiny,3,0.46
+Central India Mining Co,Ambikapur,Limestone Quarry,1.34,2024-06-14,,Referred,0,0.1
+Shakti Infra Projects,Korba,Industrial Plant,2.77,2024-01-14,,Rejected,3,0.54
+Shakti Infra Projects,Rajnandgaon,Infrastructure,3.8,2024-03-20,,MoM Generated,3,0.51
+EcoBuild Developers,Kanker,Brick Kiln,13.68,2023-12-20,2024-01-14,Approved,3,0.38
+Shakti Infra Projects,Raipur,Industrial Plant,12.82,2023-07-02,,Rejected,1,0.54
+Riverbed Minerals Pvt,Jagdalpur,Infrastructure,5.71,2024-04-03,,EDS,2,0.42
+Shakti Infra Projects,Bilaspur,Industrial Plant,14.74,2023-06-06,,Referred,2,0.82
+Central India Mining Co,Bilaspur,Limestone Quarry,5.9,2023-02-22,,Referred,0,0.59
+Shiv Brick Industries,Durg,Brick Kiln,1.17,2024-09-29,,Rejected,3,0.43
+Chhattisgarh Infra Group,Korba,Limestone Quarry,10.67,2024-05-21,,Rejected,3,0.33
+ABC Mining Ltd,Bilaspur,Brick Kiln,5.13,2023-06-12,2023-09-26,Approved,1,0.87
+Shiv Brick Industries,Rajnandgaon,Limestone Quarry,5.68,2023-06-21,,Referred,2,0.22
+Bastar Natural Resources,Raipur,Industrial Plant,11.97,2024-05-04,,Referred,3,0.8
+Korba Limestone Corp,Durg,Brick Kiln,5.7,2023-07-17,,MoM Generated,3,0.14
+Central India Mining Co,Korba,Limestone Quarry,5.21,2024-05-25,2024-09-21,Approved,3,0.61
+Riverbed Minerals Pvt,Ambikapur,Sand Mining,11.35,2023-08-21,,EDS,1,0.27
+Raigarh Aggregates,Bilaspur,Sand Mining,5.21,2023-10-03,,Rejected,1,0.6
+ABC Mining Ltd,Durg,Brick Kiln,3.08,2024-02-11,,EDS,1,0.18
+Shakti Infra Projects,Raigarh,Industrial Plant,3.64,2024-05-22,,Rejected,1,0.36
+Shiv Brick Industries,Korba,Brick Kiln,6.79,2023-01-29,,MoM Generated,3,0.55
+Riverbed Minerals Pvt,Kanker,Industrial Plant,2.85,2024-05-23,2024-08-20,Approved,2,0.61
+Raigarh Aggregates,Jagdalpur,Brick Kiln,4.99,2023-04-23,,Referred,3,0.86
+ABC Mining Ltd,Jagdalpur,Sand Mining,9.28,2024-05-31,,Under Scrutiny,2,0.29
+EcoStone Extractors,Jagdalpur,Sand Mining,10.56,2024-11-25,2025-01-16,Approved,3,0.63
+Chhattisgarh Infra Group,Rajnandgaon,Limestone Quarry,4.71,2024-10-05,,EDS,3,0.18
+Durg Construction Pvt Ltd,Jagdalpur,Brick Kiln,2.45,2024-03-29,,Under Scrutiny,2,0.18
+Sunrise Quarry Co,Korba,Industrial Plant,9.05,2024-01-06,2024-04-13,Approved,3,0.75
+Riverbed Minerals Pvt,Rajnandgaon,Sand Mining,9.25,2024-11-11,,MoM Generated,2,0.46
+Shiv Brick Industries,Bilaspur,Brick Kiln,3.48,2023-04-04,,Under Scrutiny,0,0.24
+Shakti Infra Projects,Jagdalpur,Brick Kiln,12.8,2024-11-17,,Referred,0,0.72
+ABC Mining Ltd,Korba,Industrial Plant,14.75,2023-11-01,,EDS,2,0.21
+Bastar Natural Resources,Kanker,Brick Kiln,6.64,2023-11-28,,Rejected,0,0.25
+Shiv Brick Industries,Kanker,Infrastructure,6.4,2023-04-01,2023-05-15,Approved,0,0.71
+Central India Mining Co,Ambikapur,Sand Mining,6.23,2023-07-17,,Under Scrutiny,0,0.54
+Green Earth Infrastructure,Korba,Sand Mining,7.34,2024-06-01,,EDS,2,0.72
+Green Earth Infrastructure,Ambikapur,Industrial Plant,14.13,2024-01-30,,EDS,2,0.41
+Chhattisgarh Infra Group,Ambikapur,Brick Kiln,5.05,2023-04-17,2023-07-23,Approved,0,0.57
+Shiv Brick Industries,Raipur,Industrial Plant,2.42,2024-09-09,,EDS,0,0.28
+ABC Mining Ltd,Rajnandgaon,Limestone Quarry,14.46,2023-03-05,,EDS,1,0.3
+Raigarh Aggregates,Korba,Brick Kiln,8.92,2024-10-09,2024-11-06,Approved,1,0.19
+Sunrise Quarry Co,Korba,Sand Mining,8.29,2023-11-12,,Rejected,0,0.38
+Bastar Natural Resources,Korba,Industrial Plant,2.72,2023-11-07,,Referred,1,0.51
+EcoBuild Developers,Jagdalpur,Sand Mining,12.74,2024-09-19,2024-11-20,Approved,2,0.34
+EcoStone Extractors,Korba,Infrastructure,5.18,2023-12-20,,Referred,3,0.83
+Durg Construction Pvt Ltd,Kanker,Industrial Plant,10.99,2024-04-11,,Under Scrutiny,2,0.19
+Shiv Brick Industries,Jagdalpur,Industrial Plant,8.01,2024-01-02,,Under Scrutiny,1,0.32
+Riverbed Minerals Pvt,Kanker,Industrial Plant,8.24,2023-06-01,2023-09-16,Approved,0,0.59
+Shiv Brick Industries,Jagdalpur,Industrial Plant,9.7,2023-06-24,,EDS,0,0.27
+Chhattisgarh Infra Group,Bilaspur,Limestone Quarry,1.68,2023-02-08,,MoM Generated,1,0.67
+Shiv Brick Industries,Bilaspur,Industrial Plant,4.97,2023-07-21,,EDS,0,0.34
+Korba Limestone Corp,Korba,Brick Kiln,3.66,2024-06-06,2024-07-13,Approved,2,0.36
+Riverbed Minerals Pvt,Korba,Limestone Quarry,11.93,2023-02-02,,MoM Generated,3,0.7
+Durg Construction Pvt Ltd,Korba,Sand Mining,8.06,2023-05-24,,MoM Generated,3,0.48
+Bastar Natural Resources,Kanker,Sand Mining,12.87,2024-07-10,,Under Scrutiny,2,0.49
+Central India Mining Co,Ambikapur,Industrial Plant,5.93,2024-08-13,2024-12-04,Approved,1,0.78
+Green Earth Infrastructure,Jagdalpur,Infrastructure,1.12,2023-06-10,,Under Scrutiny,2,0.69
+Durg Construction Pvt Ltd,Bilaspur,Limestone Quarry,11.74,2024-07-07,,Rejected,2,0.54
+Korba Limestone Corp,Korba,Infrastructure,14.86,2024-03-27,,MoM Generated,2,0.44
+Chhattisgarh Infra Group,Durg,Infrastructure,6.51,2023-04-04,2023-06-21,Approved,2,0.42
+Chhattisgarh Infra Group,Durg,Infrastructure,11.91,2023-08-21,,MoM Generated,2,0.19
+Bastar Natural Resources,Jagdalpur,Limestone Quarry,8.65,2024-07-01,,EDS,3,0.73
+EcoBuild Developers,Raigarh,Sand Mining,4.1,2023-10-28,,Under Scrutiny,0,0.56
+Durg Construction Pvt Ltd,Durg,Infrastructure,10.63,2023-03-12,,Referred,2,0.63
+Shiv Brick Industries,Kanker,Industrial Plant,3.11,2023-07-09,,Under Scrutiny,1,0.76
+Shiv Brick Industries,Ambikapur,Sand Mining,12.06,2023-01-02,,EDS,0,0.81
+EcoStone Extractors,Durg,Infrastructure,11.17,2024-11-16,,EDS,1,0.63
+EcoBuild Developers,Korba,Infrastructure,4.9,2024-02-02,,MoM Generated,2,0.78
+ABC Mining Ltd,Korba,Limestone Quarry,4.72,2023-09-14,2023-12-08,Approved,3,0.13
+Riverbed Minerals Pvt,Ambikapur,Sand Mining,1.83,2023-12-19,,Rejected,0,0.82
+Shakti Infra Projects,Rajnandgaon,Limestone Quarry,6.03,2024-10-26,,MoM Generated,2,0.68
+Durg Construction Pvt Ltd,Raigarh,Sand Mining,5.74,2024-11-24,,Referred,1,0.38
+Central India Mining Co,Raipur,Brick Kiln,3.16,2024-08-13,,Rejected,3,0.87
+Korba Limestone Corp,Ambikapur,Infrastructure,3.26,2024-10-08,,Referred,2,0.87
+Korba Limestone Corp,Ambikapur,Brick Kiln,2.91,2024-06-22,,Under Scrutiny,2,0.25
+Sunrise Quarry Co,Bilaspur,Limestone Quarry,7.5,2023-12-13,,EDS,1,0.75
+Durg Construction Pvt Ltd,Kanker,Limestone Quarry,5.9,2024-08-16,,MoM Generated,2,0.87
+Raigarh Aggregates,Ambikapur,Sand Mining,2.06,2023-02-28,,Rejected,1,0.53
+Chhattisgarh Infra Group,Raipur,Infrastructure,3.11,2024-10-25,,Rejected,0,0.28
+Green Earth Infrastructure,Ambikapur,Limestone Quarry,4.76,2024-01-05,,Referred,0,0.3
+Mahanadi Sand Works,Rajnandgaon,Limestone Quarry,4.41,2024-11-19,,Rejected,2,0.8
+Green Earth Infrastructure,Kanker,Limestone Quarry,9.52,2024-02-11,,Under Scrutiny,1,0.12
+Raigarh Aggregates,Jagdalpur,Infrastructure,2.17,2023-08-13,,MoM Generated,0,0.34
+Korba Limestone Corp,Korba,Brick Kiln,13.41,2024-03-20,,MoM Generated,3,0.55
+Shakti Infra Projects,Kanker,Infrastructure,12.27,2024-05-10,2024-08-27,Approved,0,0.43
+Mahanadi Sand Works,Ambikapur,Limestone Quarry,7.37,2023-10-02,,EDS,0,0.54
+Durg Construction Pvt Ltd,Rajnandgaon,Infrastructure,9.05,2024-11-05,,EDS,3,0.77
+Mahanadi Sand Works,Jagdalpur,Limestone Quarry,14.75,2023-04-09,2023-07-04,Approved,0,0.31
+Riverbed Minerals Pvt,Rajnandgaon,Limestone Quarry,13.14,2024-08-11,,MoM Generated,0,0.11
+Mahanadi Sand Works,Durg,Infrastructure,7.5,2023-04-04,,Under Scrutiny,3,0.34
+Chhattisgarh Infra Group,Bilaspur,Sand Mining,8.04,2023-09-07,,EDS,0,0.4
+EcoBuild Developers,Kanker,Brick Kiln,9.98,2023-07-03,2023-09-26,Approved,3,0.83
+EcoBuild Developers,Rajnandgaon,Brick Kiln,10.88,2023-06-03,2023-08-01,Approved,2,0.32
+Chhattisgarh Infra Group,Raigarh,Industrial Plant,9.96,2023-09-06,,Under Scrutiny,0,0.32
+EcoBuild Developers,Rajnandgaon,Brick Kiln,10.67,2023-10-31,,Rejected,0,0.4
+Sunrise Quarry Co,Kanker,Limestone Quarry,5.09,2023-02-05,,Rejected,0,0.48
+ABC Mining Ltd,Raipur,Infrastructure,8.52,2024-08-20,2024-10-12,Approved,3,0.18
+Durg Construction Pvt Ltd,Raigarh,Sand Mining,2.44,2023-04-12,,MoM Generated,1,0.38
+Chhattisgarh Infra Group,Kanker,Sand Mining,4.29,2024-01-16,,MoM Generated,1,0.37
+Central India Mining Co,Durg,Sand Mining,4.63,2023-01-14,,Referred,2,0.36
+EcoBuild Developers,Raigarh,Sand Mining,7.35,2023-06-14,,EDS,1,0.32
+Mahanadi Sand Works,Ambikapur,Brick Kiln,14.57,2024-11-28,2025-02-07,Approved,1,0.82
+Mahanadi Sand Works,Raipur,Brick Kiln,8.21,2024-08-06,,Under Scrutiny,3,0.58
+Mahanadi Sand Works,Rajnandgaon,Infrastructure,1.52,2023-10-26,,Rejected,0,0.45
+Korba Limestone Corp,Raigarh,Industrial Plant,2.54,2024-03-24,,MoM Generated,0,0.49
+Bastar Natural Resources,Bilaspur,Infrastructure,14.13,2023-05-17,,Referred,3,0.89
+Central India Mining Co,Jagdalpur,Sand Mining,9.9,2024-02-28,,MoM Generated,1,0.72
+Chhattisgarh Infra Group,Ambikapur,Limestone Quarry,14.87,2024-07-14,,Referred,1,0.22
+Shakti Infra Projects,Kanker,Limestone Quarry,11.92,2023-12-09,,EDS,2,0.62
+Bastar Natural Resources,Bilaspur,Infrastructure,11.06,2023-11-04,,Referred,1,0.72
+Durg Construction Pvt Ltd,Bilaspur,Infrastructure,1.88,2024-07-18,,Under Scrutiny,0,0.42
+Green Earth Infrastructure,Raigarh,Brick Kiln,8.74,2023-03-17,,Referred,2,0.11
+Durg Construction Pvt Ltd,Jagdalpur,Industrial Plant,12.65,2023-09-09,,Rejected,3,0.51
+Central India Mining Co,Kanker,Sand Mining,5.13,2023-10-04,,Under Scrutiny,3,0.76
+Korba Limestone Corp,Ambikapur,Industrial Plant,14.72,2023-08-27,,EDS,0,0.37
+Central India Mining Co,Bilaspur,Brick Kiln,9.63,2023-10-03,,Referred,2,0.11
+Central India Mining Co,Rajnandgaon,Industrial Plant,8.29,2024-04-11,,Referred,3,0.45
+Chhattisgarh Infra Group,Rajnandgaon,Sand Mining,6.86,2023-09-27,,EDS,0,0.59
+Shiv Brick Industries,Raipur,Limestone Quarry,6.02,2023-05-12,,Referred,0,0.36
+Mahanadi Sand Works,Korba,Limestone Quarry,1.65,2023-10-15,,Referred,2,0.85
+Sunrise Quarry Co,Jagdalpur,Brick Kiln,5.07,2023-01-11,2023-04-27,Approved,1,0.55
+EcoStone Extractors,Korba,Limestone Quarry,4.97,2024-08-16,,Referred,0,0.58
+EcoStone Extractors,Rajnandgaon,Limestone Quarry,14.93,2023-06-12,2023-07-30,Approved,3,0.54
+Sunrise Quarry Co,Ambikapur,Brick Kiln,11.63,2024-04-05,,Referred,2,0.24
+Chhattisgarh Infra Group,Durg,Brick Kiln,9.84,2023-08-29,,Referred,1,0.31
+Chhattisgarh Infra Group,Durg,Infrastructure,10.97,2023-10-08,,Referred,0,0.13
+Riverbed Minerals Pvt,Raigarh,Sand Mining,1.53,2024-03-17,,EDS,1,0.15
+Shiv Brick Industries,Jagdalpur,Limestone Quarry,7.61,2023-10-14,,Rejected,2,0.46
+Bastar Natural Resources,Raipur,Industrial Plant,5.64,2023-01-03,,Rejected,0,0.41
+Shakti Infra Projects,Bilaspur,Industrial Plant,1.57,2023-11-22,,EDS,3,0.25
+Korba Limestone Corp,Rajnandgaon,Sand Mining,5.02,2024-04-05,,EDS,0,0.11
+Mahanadi Sand Works,Raigarh,Industrial Plant,13.82,2024-11-02,,Referred,0,0.68
+Riverbed Minerals Pvt,Kanker,Infrastructure,5.81,2023-06-20,,Under Scrutiny,0,0.49
+Chhattisgarh Infra Group,Raigarh,Brick Kiln,5.86,2023-12-16,,EDS,3,0.81
+Durg Construction Pvt Ltd,Raipur,Infrastructure,9.33,2023-01-20,,EDS,0,0.14
+EcoStone Extractors,Durg,Brick Kiln,13.84,2024-10-31,,Under Scrutiny,0,0.43
+EcoStone Extractors,Bilaspur,Limestone Quarry,7.5,2023-10-02,,Under Scrutiny,1,0.66
+Durg Construction Pvt Ltd,Durg,Industrial Plant,9.49,2024-05-24,,MoM Generated,0,0.87
+Central India Mining Co,Rajnandgaon,Infrastructure,7.12,2024-07-04,,Referred,1,0.69
+Shiv Brick Industries,Bilaspur,Limestone Quarry,13.89,2023-04-14,,Rejected,1,0.79
+Shiv Brick Industries,Rajnandgaon,Industrial Plant,9.1,2023-03-21,,EDS,1,0.77
+Shakti Infra Projects,Jagdalpur,Brick Kiln,8.24,2023-10-16,,Rejected,2,0.25
+Durg Construction Pvt Ltd,Bilaspur,Limestone Quarry,10.36,2023-08-15,,Referred,3,0.82
+EcoStone Extractors,Bilaspur,Industrial Plant,11.53,2024-05-09,,Referred,3,0.28
+Chhattisgarh Infra Group,Bilaspur,Limestone Quarry,6.66,2024-04-26,,Referred,3,0.27
+ABC Mining Ltd,Jagdalpur,Infrastructure,13.62,2023-07-12,,MoM Generated,3,0.52
+EcoBuild Developers,Raigarh,Brick Kiln,5.18,2024-03-17,,EDS,0,0.51
+Chhattisgarh Infra Group,Raipur,Limestone Quarry,13.61,2024-09-02,2024-12-17,Approved,2,0.22
+Korba Limestone Corp,Raigarh,Industrial Plant,12.38,2024-02-03,,Referred,0,0.66
+Riverbed Minerals Pvt,Durg,Limestone Quarry,12.77,2024-06-21,,Under Scrutiny,0,0.34
+EcoStone Extractors,Korba,Limestone Quarry,4.27,2023-01-16,,Under Scrutiny,0,0.74
+Sunrise Quarry Co,Jagdalpur,Limestone Quarry,11.63,2024-04-14,,Under Scrutiny,0,0.6
+Sunrise Quarry Co,Durg,Brick Kiln,2.43,2023-12-22,,Rejected,0,0.13
+Sunrise Quarry Co,Durg,Industrial Plant,7.97,2023-07-13,,Rejected,3,0.64
+Green Earth Infrastructure,Rajnandgaon,Limestone Quarry,8.87,2024-11-09,,Referred,2,0.72
+Sunrise Quarry Co,Jagdalpur,Brick Kiln,8.35,2023-03-22,,Referred,1,0.21
+Central India Mining Co,Jagdalpur,Brick Kiln,10.87,2023-02-19,2023-06-11,Approved,0,0.48
+ABC Mining Ltd,Ambikapur,Brick Kiln,12.64,2023-10-29,,MoM Generated,1,0.47
+Central India Mining Co,Ambikapur,Industrial Plant,7.89,2024-11-22,2025-01-06,Approved,3,0.11
+Shakti Infra Projects,Korba,Sand Mining,4.6,2023-03-28,,EDS,1,0.51
+Shiv Brick Industries,Raipur,Brick Kiln,6.81,2023-02-09,,MoM Generated,0,0.15
+Raigarh Aggregates,Durg,Infrastructure,2.57,2024-04-04,,Referred,0,0.45
+Sunrise Quarry Co,Kanker,Limestone Quarry,13.92,2023-03-12,,Rejected,3,0.61
+Green Earth Infrastructure,Ambikapur,Brick Kiln,14.97,2024-04-12,,Referred,2,0.64
+Shiv Brick Industries,Raigarh,Limestone Quarry,6.93,2023-08-12,,EDS,1,0.15
+EcoStone Extractors,Raipur,Infrastructure,3.62,2024-04-02,,MoM Generated,0,0.78
+Green Earth Infrastructure,Jagdalpur,Sand Mining,6.46,2024-01-15,,MoM Generated,0,0.61
+Bastar Natural Resources,Raigarh,Sand Mining,10.86,2023-08-07,,Rejected,1,0.14
+EcoStone Extractors,Raigarh,Infrastructure,3.91,2024-11-24,,Rejected,3,0.12
+Raigarh Aggregates,Ambikapur,Limestone Quarry,3.01,2023-05-23,,MoM Generated,2,0.35
+Durg Construction Pvt Ltd,Rajnandgaon,Sand Mining,13.92,2024-03-22,2024-06-20,Approved,1,0.73
+Korba Limestone Corp,Durg,Industrial Plant,7.08,2023-03-14,,Under Scrutiny,2,0.37
+Green Earth Infrastructure,Durg,Brick Kiln,12.2,2023-01-11,,Referred,3,0.34
+Bastar Natural Resources,Jagdalpur,Industrial Plant,5.64,2024-09-23,2025-01-21,Approved,3,0.51
+Raigarh Aggregates,Durg,Brick Kiln,14.36,2023-04-04,,MoM Generated,2,0.43
+Mahanadi Sand Works,Raipur,Brick Kiln,3.63,2023-02-04,2023-02-26,Approved,1,0.81
+EcoStone Extractors,Durg,Brick Kiln,4.21,2023-07-18,,Rejected,2,0.28
+Shiv Brick Industries,Jagdalpur,Sand Mining,14.17,2023-03-04,2023-06-28,Approved,1,0.77
+Chhattisgarh Infra Group,Durg,Industrial Plant,5.14,2023-02-04,,EDS,0,0.58
+Korba Limestone Corp,Kanker,Limestone Quarry,3.32,2023-02-08,,EDS,2,0.2
+Riverbed Minerals Pvt,Bilaspur,Limestone Quarry,3.18,2024-03-24,2024-05-17,Approved,1,0.12
+EcoStone Extractors,Raipur,Brick Kiln,3.27,2023-06-11,,EDS,2,0.73
+EcoStone Extractors,Durg,Industrial Plant,13.58,2023-04-21,,EDS,2,0.87
+Raigarh Aggregates,Korba,Limestone Quarry,6.29,2024-05-31,,Rejected,0,0.72
+EcoBuild Developers,Kanker,Sand Mining,12.56,2024-07-21,,Rejected,1,0.25
+Shiv Brick Industries,Rajnandgaon,Infrastructure,3.08,2024-07-20,,MoM Generated,1,0.11
+Green Earth Infrastructure,Durg,Infrastructure,8.67,2023-08-27,,EDS,0,0.1
+Sunrise Quarry Co,Korba,Sand Mining,14.42,2024-09-26,,Referred,1,0.72
+EcoStone Extractors,Rajnandgaon,Infrastructure,13.74,2024-05-29,,Rejected,1,0.21
+Bastar Natural Resources,Durg,Industrial Plant,4.78,2024-07-20,,EDS,3,0.77
+Bastar Natural Resources,Korba,Infrastructure,6.31,2023-02-10,,EDS,2,0.37
+Riverbed Minerals Pvt,Raigarh,Brick Kiln,10.9,2024-07-05,,EDS,0,0.35
+EcoStone Extractors,Raipur,Brick Kiln,12.13,2024-07-07,,EDS,1,0.26
+Durg Construction Pvt Ltd,Durg,Infrastructure,7.48,2023-01-04,,Under Scrutiny,0,0.86
+Sunrise Quarry Co,Jagdalpur,Brick Kiln,14.44,2024-02-04,,Under Scrutiny,0,0.8
+Durg Construction Pvt Ltd,Korba,Infrastructure,11.71,2023-06-26,,Referred,2,0.18
+Sunrise Quarry Co,Raigarh,Infrastructure,11.17,2023-09-22,2023-12-01,Approved,3,0.41
+Shiv Brick Industries,Rajnandgaon,Infrastructure,6.22,2024-01-01,,EDS,0,0.63
+Shakti Infra Projects,Kanker,Sand Mining,10.35,2023-04-28,,MoM Generated,2,0.55
+Mahanadi Sand Works,Jagdalpur,Infrastructure,10.17,2023-05-25,,MoM Generated,1,0.58
+Shiv Brick Industries,Raipur,Limestone Quarry,1.72,2023-01-02,,EDS,1,0.37
+Bastar Natural Resources,Raigarh,Sand Mining,10.37,2023-06-25,,EDS,1,0.79
+ABC Mining Ltd,Raipur,Brick Kiln,1.98,2023-07-08,,Referred,0,0.62
+Raigarh Aggregates,Raigarh,Limestone Quarry,8.94,2024-11-15,,MoM Generated,3,0.38
+EcoStone Extractors,Ambikapur,Industrial Plant,6.93,2023-04-15,,Referred,1,0.1
+Shiv Brick Industries,Raipur,Infrastructure,5.31,2024-01-14,2024-05-07,Approved,3,0.79
+Central India Mining Co,Durg,Brick Kiln,14.29,2024-07-07,,Referred,3,0.22
+Raigarh Aggregates,Durg,Industrial Plant,7.22,2023-05-27,,Under Scrutiny,1,0.38
+Green Earth Infrastructure,Raipur,Brick Kiln,8.81,2023-09-19,,Referred,1,0.27
+Riverbed Minerals Pvt,Raigarh,Industrial Plant,9.51,2023-02-03,,MoM Generated,3,0.18
+Chhattisgarh Infra Group,Kanker,Industrial Plant,10.2,2023-06-23,2023-08-16,Approved,0,0.31
+Shiv Brick Industries,Jagdalpur,Infrastructure,2.22,2024-07-29,,MoM Generated,1,0.58
+Chhattisgarh Infra Group,Kanker,Sand Mining,10.12,2023-02-20,2023-05-30,Approved,0,0.7
+EcoStone Extractors,Kanker,Limestone Quarry,10.76,2024-08-26,,MoM Generated,3,0.39
+Sunrise Quarry Co,Durg,Infrastructure,8.3,2024-06-02,,Under Scrutiny,1,0.17
+Shakti Infra Projects,Ambikapur,Sand Mining,12.42,2023-07-31,,Rejected,2,0.2
+Central India Mining Co,Rajnandgaon,Infrastructure,7.55,2024-05-12,,MoM Generated,0,0.15
+EcoStone Extractors,Korba,Industrial Plant,12.76,2024-05-06,,Under Scrutiny,3,0.42
+EcoStone Extractors,Durg,Limestone Quarry,5.63,2023-09-14,,Rejected,1,0.67
+Mahanadi Sand Works,Jagdalpur,Brick Kiln,8.65,2023-07-20,,MoM Generated,2,0.7
+EcoBuild Developers,Durg,Sand Mining,12.69,2023-05-28,,MoM Generated,3,0.69
+Shakti Infra Projects,Durg,Limestone Quarry,4.32,2023-12-21,,Rejected,3,0.35
+Central India Mining Co,Rajnandgaon,Sand Mining,9.06,2024-03-19,2024-06-06,Approved,1,0.33
+Sunrise Quarry Co,Rajnandgaon,Infrastructure,14.65,2024-02-22,,Referred,2,0.18
+Green Earth Infrastructure,Raigarh,Sand Mining,7.23,2023-05-01,,Under Scrutiny,3,0.49
+Riverbed Minerals Pvt,Raigarh,Limestone Quarry,9.09,2023-08-11,,Rejected,3,0.6
+Chhattisgarh Infra Group,Bilaspur,Infrastructure,8.77,2024-02-08,,Rejected,2,0.37
+Shakti Infra Projects,Raipur,Infrastructure,6.47,2024-08-14,,Under Scrutiny,2,0.56
+EcoStone Extractors,Bilaspur,Sand Mining,8.96,2023-09-27,2023-11-30,Approved,0,0.62
+Raigarh Aggregates,Bilaspur,Limestone Quarry,6.41,2023-05-09,,Rejected,2,0.3
+Green Earth Infrastructure,Korba,Brick Kiln,11.62,2023-12-17,,EDS,0,0.86
+Bastar Natural Resources,Raigarh,Sand Mining,3.66,2023-06-15,,Rejected,3,0.32
+Chhattisgarh Infra Group,Rajnandgaon,Sand Mining,13.7,2023-02-22,,Rejected,3,0.39
+Riverbed Minerals Pvt,Raigarh,Brick Kiln,5.85,2024-09-23,,EDS,3,0.81
+Raigarh Aggregates,Raipur,Limestone Quarry,10.58,2023-09-20,,Rejected,0,0.79
+Bastar Natural Resources,Bilaspur,Industrial Plant,1.66,2024-02-19,,Referred,1,0.71
+Durg Construction Pvt Ltd,Jagdalpur,Infrastructure,10.28,2023-03-15,,MoM Generated,0,0.33
+Mahanadi Sand Works,Raipur,Sand Mining,14.0,2024-05-30,,Under Scrutiny,1,0.26
+EcoStone Extractors,Raipur,Infrastructure,3.24,2023-08-18,,Referred,1,0.24
+Sunrise Quarry Co,Ambikapur,Sand Mining,8.07,2023-08-31,,Rejected,1,0.79
+Shakti Infra Projects,Korba,Industrial Plant,5.17,2023-02-16,,Under Scrutiny,3,0.18
+ABC Mining Ltd,Kanker,Infrastructure,12.75,2023-04-29,,Referred,0,0.5
+Riverbed Minerals Pvt,Jagdalpur,Brick Kiln,8.91,2024-04-12,,Referred,1,0.85
+Mahanadi Sand Works,Jagdalpur,Brick Kiln,2.78,2024-07-25,,EDS,0,0.87
+Raigarh Aggregates,Raigarh,Sand Mining,13.45,2024-03-09,,Referred,1,0.83
+Sunrise Quarry Co,Durg,Limestone Quarry,11.66,2023-05-15,,EDS,1,0.38
+Durg Construction Pvt Ltd,Durg,Infrastructure,2.25,2023-05-01,,Rejected,1,0.18
+Mahanadi Sand Works,Kanker,Brick Kiln,8.1,2023-08-01,,Rejected,0,0.23
+Korba Limestone Corp,Raipur,Sand Mining,9.05,2024-04-11,,EDS,2,0.11
+Raigarh Aggregates,Kanker,Sand Mining,11.08,2023-07-25,2023-08-19,Approved,0,0.86
+Chhattisgarh Infra Group,Bilaspur,Industrial Plant,4.15,2024-10-15,,Under Scrutiny,2,0.32
+Chhattisgarh Infra Group,Rajnandgaon,Infrastructure,1.85,2024-07-02,,EDS,3,0.84
+Central India Mining Co,Jagdalpur,Sand Mining,2.64,2023-11-11,,Rejected,1,0.53
+Raigarh Aggregates,Raigarh,Brick Kiln,8.83,2024-09-07,,EDS,1,0.22
+Chhattisgarh Infra Group,Kanker,Sand Mining,5.94,2023-04-17,,MoM Generated,0,0.9
+EcoStone Extractors,Raigarh,Infrastructure,1.87,2023-09-03,,Under Scrutiny,1,0.53
+Korba Limestone Corp,Durg,Sand Mining,14.86,2023-11-03,,Under Scrutiny,2,0.61
+Green Earth Infrastructure,Durg,Sand Mining,2.28,2024-11-15,,EDS,3,0.69
+ABC Mining Ltd,Raigarh,Limestone Quarry,11.35,2024-02-11,2024-05-17,Approved,1,0.65
+Raigarh Aggregates,Raigarh,Industrial Plant,13.06,2023-12-27,,Rejected,3,0.59
+Mahanadi Sand Works,Kanker,Infrastructure,7.05,2024-03-24,,EDS,3,0.26
+Chhattisgarh Infra Group,Kanker,Infrastructure,6.48,2024-10-01,,MoM Generated,1,0.86
+Shakti Infra Projects,Kanker,Brick Kiln,13.52,2024-10-17,,Referred,0,0.57
+Korba Limestone Corp,Bilaspur,Limestone Quarry,9.79,2024-07-30,,Rejected,0,0.51
+Korba Limestone Corp,Rajnandgaon,Sand Mining,2.83,2024-03-16,2024-06-19,Approved,0,0.69
+Shakti Infra Projects,Durg,Sand Mining,14.6,2023-08-05,,Under Scrutiny,1,0.7
+Bastar Natural Resources,Jagdalpur,Limestone Quarry,13.66,2024-08-07,,Referred,3,0.85
+Central India Mining Co,Raigarh,Infrastructure,5.31,2024-01-01,,Under Scrutiny,2,0.26
+Korba Limestone Corp,Jagdalpur,Infrastructure,7.54,2024-09-01,,Under Scrutiny,2,0.36
+Mahanadi Sand Works,Bilaspur,Sand Mining,13.28,2024-04-01,,Referred,3,0.25
+Central India Mining Co,Rajnandgaon,Infrastructure,12.34,2024-07-02,,Rejected,3,0.36
+Bastar Natural Resources,Raipur,Industrial Plant,5.01,2023-12-30,,MoM Generated,1,0.42
+Raigarh Aggregates,Ambikapur,Infrastructure,7.78,2023-03-07,2023-06-29,Approved,2,0.75
+Sunrise Quarry Co,Bilaspur,Brick Kiln,5.94,2023-06-25,,MoM Generated,0,0.29
+Riverbed Minerals Pvt,Durg,Industrial Plant,2.67,2024-10-19,,Rejected,2,0.88
+Chhattisgarh Infra Group,Bilaspur,Brick Kiln,13.36,2023-05-22,,MoM Generated,3,0.55
+ABC Mining Ltd,Jagdalpur,Limestone Quarry,3.28,2023-04-08,,EDS,3,0.7
+Shiv Brick Industries,Rajnandgaon,Sand Mining,1.67,2024-02-20,,Rejected,2,0.6
+Shakti Infra Projects,Korba,Sand Mining,3.0,2024-01-28,,Under Scrutiny,1,0.69
+Central India Mining Co,Raigarh,Industrial Plant,9.3,2024-09-24,2025-01-01,Approved,1,0.16
+Shiv Brick Industries,Kanker,Limestone Quarry,14.44,2023-06-03,,MoM Generated,0,0.52
+Chhattisgarh Infra Group,Durg,Infrastructure,7.5,2023-09-17,,Rejected,2,0.22
+EcoStone Extractors,Jagdalpur,Industrial Plant,3.5,2023-03-22,,Referred,0,0.73
+Raigarh Aggregates,Jagdalpur,Infrastructure,4.88,2024-11-04,2024-11-24,Approved,1,0.7
+Raigarh Aggregates,Bilaspur,Sand Mining,9.65,2023-11-08,,Rejected,2,0.73
+Riverbed Minerals Pvt,Korba,Infrastructure,6.04,2023-10-16,,Under Scrutiny,0,0.17
+Korba Limestone Corp,Korba,Sand Mining,5.35,2023-02-06,2023-03-08,Approved,1,0.34
+Raigarh Aggregates,Korba,Infrastructure,10.4,2023-08-06,,Under Scrutiny,2,0.6
+Shakti Infra Projects,Jagdalpur,Limestone Quarry,7.33,2024-06-03,,EDS,1,0.55
+Shakti Infra Projects,Kanker,Brick Kiln,1.81,2024-10-19,,Rejected,3,0.55
+ABC Mining Ltd,Raigarh,Industrial Plant,14.72,2024-09-12,,EDS,0,0.21
+Green Earth Infrastructure,Korba,Industrial Plant,2.17,2023-02-03,2023-04-17,Approved,0,0.38
+Shakti Infra Projects,Durg,Industrial Plant,2.89,2024-05-13,,MoM Generated,2,0.52
+Mahanadi Sand Works,Jagdalpur,Limestone Quarry,11.89,2023-03-01,2023-05-09,Approved,3,0.38
+EcoStone Extractors,Kanker,Infrastructure,9.28,2023-10-13,,Referred,0,0.19
+Shiv Brick Industries,Jagdalpur,Industrial Plant,2.95,2024-11-09,,Under Scrutiny,3,0.24
+Mahanadi Sand Works,Korba,Brick Kiln,4.51,2023-04-10,,MoM Generated,2,0.56
+Central India Mining Co,Bilaspur,Infrastructure,7.12,2024-10-11,,Rejected,3,0.45
+EcoBuild Developers,Bilaspur,Infrastructure,7.22,2023-07-14,,Rejected,0,0.45
+Green Earth Infrastructure,Kanker,Brick Kiln,14.34,2023-11-26,,MoM Generated,0,0.53
+Shakti Infra Projects,Jagdalpur,Infrastructure,12.6,2023-10-10,,MoM Generated,3,0.67
+ABC Mining Ltd,Ambikapur,Industrial Plant,12.88,2024-01-23,,Under Scrutiny,0,0.39
+Riverbed Minerals Pvt,Rajnandgaon,Limestone Quarry,1.14,2024-05-20,,EDS,0,0.41
+EcoStone Extractors,Rajnandgaon,Infrastructure,5.46,2023-05-18,2023-06-04,Approved,3,0.68
+Mahanadi Sand Works,Ambikapur,Limestone Quarry,12.0,2024-05-27,2024-06-16,Approved,0,0.72
+Raigarh Aggregates,Raigarh,Infrastructure,5.15,2023-04-08,,MoM Generated,1,0.66
+ABC Mining Ltd,Korba,Brick Kiln,2.54,2023-06-28,,Under Scrutiny,1,0.48
+ABC Mining Ltd,Bilaspur,Brick Kiln,3.5,2024-04-17,2024-08-15,Approved,2,0.68
+Durg Construction Pvt Ltd,Bilaspur,Brick Kiln,12.61,2023-01-14,,Rejected,3,0.39
+Green Earth Infrastructure,Jagdalpur,Infrastructure,2.03,2024-09-19,,MoM Generated,1,0.89
+Green Earth Infrastructure,Ambikapur,Industrial Plant,7.67,2023-04-10,,Under Scrutiny,1,0.85
+ABC Mining Ltd,Raigarh,Sand Mining,14.45,2024-02-28,,Rejected,3,0.31
+Green Earth Infrastructure,Raipur,Limestone Quarry,11.22,2023-02-14,2023-04-04,Approved,3,0.24
+EcoStone Extractors,Raigarh,Sand Mining,13.19,2023-12-09,,MoM Generated,2,0.89
+EcoBuild Developers,Durg,Brick Kiln,13.58,2024-07-04,,EDS,2,0.74
+Sunrise Quarry Co,Raigarh,Limestone Quarry,4.4,2024-01-03,2024-02-20,Approved,0,0.82
+Central India Mining Co,Jagdalpur,Sand Mining,13.84,2023-10-08,2023-11-30,Approved,3,0.8
+Shakti Infra Projects,Raipur,Infrastructure,6.36,2023-11-05,,MoM Generated,3,0.12
+Durg Construction Pvt Ltd,Durg,Industrial Plant,3.64,2023-12-31,,MoM Generated,2,0.56
+Durg Construction Pvt Ltd,Kanker,Limestone Quarry,7.04,2024-02-05,,EDS,0,0.5
+EcoStone Extractors,Rajnandgaon,Sand Mining,1.45,2023-02-24,,Under Scrutiny,1,0.86
+Chhattisgarh Infra Group,Jagdalpur,Industrial Plant,1.33,2023-05-18,,Referred,3,0.79
+Riverbed Minerals Pvt,Raipur,Industrial Plant,11.53,2024-01-27,2024-04-17,Approved,3,0.14
+Shakti Infra Projects,Jagdalpur,Brick Kiln,5.35,2024-01-15,,EDS,3,0.34
+Central India Mining Co,Bilaspur,Brick Kiln,7.69,2023-12-26,,Referred,2,0.72
+Green Earth Infrastructure,Raipur,Sand Mining,1.7,2024-03-13,,Under Scrutiny,0,0.16
+Durg Construction Pvt Ltd,Kanker,Infrastructure,1.67,2023-08-23,,EDS,0,0.47
+Chhattisgarh Infra Group,Kanker,Limestone Quarry,2.74,2024-04-23,,MoM Generated,3,0.35
+Central India Mining Co,Ambikapur,Sand Mining,13.35,2023-11-11,,Rejected,2,0.7
+EcoBuild Developers,Raigarh,Sand Mining,13.69,2023-06-11,,Referred,3,0.32
+Chhattisgarh Infra Group,Durg,Sand Mining,10.81,2023-02-08,,Referred,2,0.18
+Korba Limestone Corp,Raipur,Sand Mining,5.44,2024-10-18,,Under Scrutiny,3,0.39
+Sunrise Quarry Co,Durg,Infrastructure,11.79,2023-12-26,,MoM Generated,2,0.21
+Raigarh Aggregates,Ambikapur,Sand Mining,4.09,2023-09-25,,Under Scrutiny,1,0.12
+Green Earth Infrastructure,Ambikapur,Brick Kiln,4.68,2023-07-18,2023-08-09,Approved,2,0.72
+Sunrise Quarry Co,Kanker,Limestone Quarry,3.58,2024-08-13,,Under Scrutiny,0,0.83
+Korba Limestone Corp,Jagdalpur,Limestone Quarry,2.1,2023-06-12,,Under Scrutiny,3,0.59
+Korba Limestone Corp,Raipur,Brick Kiln,4.93,2024-07-16,,Under Scrutiny,3,0.57
+Central India Mining Co,Bilaspur,Infrastructure,14.92,2023-10-12,2024-02-07,Approved,2,0.9
+Central India Mining Co,Raipur,Infrastructure,5.4,2024-03-02,,Referred,1,0.58
+Bastar Natural Resources,Raipur,Brick Kiln,12.92,2023-07-18,,Under Scrutiny,2,0.4
+Bastar Natural Resources,Ambikapur,Industrial Plant,4.52,2024-09-15,2024-11-10,Approved,1,0.15
+Central India Mining Co,Korba,Limestone Quarry,6.63,2023-08-05,,Referred,2,0.88
+ABC Mining Ltd,Jagdalpur,Infrastructure,8.65,2024-01-13,,Rejected,3,0.85
+Chhattisgarh Infra Group,Kanker,Industrial Plant,7.49,2024-06-15,,Rejected,1,0.56
+ABC Mining Ltd,Ambikapur,Limestone Quarry,3.51,2024-09-08,,Under Scrutiny,1,0.15
+Raigarh Aggregates,Durg,Sand Mining,4.42,2023-10-03,,Rejected,3,0.33
+EcoBuild Developers,Korba,Limestone Quarry,1.26,2023-05-10,,Referred,3,0.44
+EcoStone Extractors,Rajnandgaon,Limestone Quarry,6.67,2024-02-13,2024-04-26,Approved,3,0.76
+EcoStone Extractors,Ambikapur,Infrastructure,13.78,2023-03-11,,Referred,0,0.16
+Shiv Brick Industries,Rajnandgaon,Brick Kiln,4.87,2024-07-05,2024-09-21,Approved,0,0.82
+Green Earth Infrastructure,Raipur,Infrastructure,8.96,2024-08-23,2024-11-20,Approved,2,0.14
+EcoBuild Developers,Kanker,Infrastructure,8.12,2023-10-11,2023-12-12,Approved,1,0.18
+Raigarh Aggregates,Raipur,Sand Mining,14.96,2023-01-24,2023-03-07,Approved,1,0.14
+Korba Limestone Corp,Kanker,Infrastructure,10.97,2023-07-24,,EDS,0,0.81
+Shiv Brick Industries,Durg,Brick Kiln,11.26,2023-05-10,,Referred,0,0.58
+Green Earth Infrastructure,Kanker,Limestone Quarry,2.37,2024-06-06,,MoM Generated,1,0.11
+Korba Limestone Corp,Ambikapur,Infrastructure,2.89,2023-07-19,,EDS,0,0.55
+Durg Construction Pvt Ltd,Jagdalpur,Sand Mining,3.46,2023-03-29,,Referred,1,0.46
+ABC Mining Ltd,Raigarh,Limestone Quarry,13.68,2024-10-24,,MoM Generated,2,0.84
+Sunrise Quarry Co,Bilaspur,Brick Kiln,8.66,2023-05-24,,Under Scrutiny,3,0.19
+Green Earth Infrastructure,Kanker,Sand Mining,2.44,2024-05-17,,EDS,2,0.13
+Shakti Infra Projects,Raigarh,Brick Kiln,13.92,2024-05-21,,Referred,3,0.81
+Mahanadi Sand Works,Ambikapur,Infrastructure,7.52,2023-01-10,,Referred,2,0.16
+Sunrise Quarry Co,Ambikapur,Brick Kiln,13.12,2024-11-27,,Under Scrutiny,2,0.59
+Durg Construction Pvt Ltd,Jagdalpur,Industrial Plant,2.19,2023-03-21,2023-05-28,Approved,2,0.75
+Shakti Infra Projects,Raigarh,Limestone Quarry,13.21,2024-06-30,,Rejected,2,0.53
+Shakti Infra Projects,Jagdalpur,Limestone Quarry,1.34,2024-06-10,2024-07-25,Approved,1,0.14
+Mahanadi Sand Works,Kanker,Infrastructure,5.86,2024-01-22,,MoM Generated,1,0.53
+Durg Construction Pvt Ltd,Korba,Infrastructure,5.95,2023-05-17,,EDS,2,0.87
+Bastar Natural Resources,Bilaspur,Brick Kiln,6.62,2023-01-07,,MoM Generated,3,0.73
+Bastar Natural Resources,Jagdalpur,Infrastructure,12.66,2024-02-27,,Rejected,2,0.87
+Raigarh Aggregates,Raipur,Infrastructure,14.41,2023-08-01,2023-11-03,Approved,3,0.28
+ABC Mining Ltd,Raigarh,Industrial Plant,13.79,2023-09-02,,Referred,2,0.48
+EcoBuild Developers,Jagdalpur,Brick Kiln,1.18,2023-06-13,2023-08-07,Approved,2,0.51
+Raigarh Aggregates,Raigarh,Sand Mining,8.31,2024-09-28,,Under Scrutiny,1,0.74
+Durg Construction Pvt Ltd,Jagdalpur,Limestone Quarry,1.81,2024-04-18,,Under Scrutiny,0,0.16
+EcoStone Extractors,Rajnandgaon,Industrial Plant,2.15,2024-09-24,,Under Scrutiny,3,0.11
+Central India Mining Co,Raigarh,Limestone Quarry,3.72,2024-03-19,,Rejected,2,0.64
+Mahanadi Sand Works,Jagdalpur,Limestone Quarry,6.99,2024-05-16,2024-07-11,Approved,0,0.61
+Korba Limestone Corp,Kanker,Brick Kiln,13.46,2024-01-20,,EDS,1,0.39
+Bastar Natural Resources,Jagdalpur,Infrastructure,14.84,2024-10-04,,EDS,0,0.27
+Raigarh Aggregates,Kanker,Industrial Plant,4.75,2024-02-29,,Referred,1,0.85
+Shakti Infra Projects,Rajnandgaon,Sand Mining,13.6,2023-01-06,,Rejected,3,0.54
+Sunrise Quarry Co,Bilaspur,Industrial Plant,8.58,2023-09-21,,Under Scrutiny,1,0.79
+Shiv Brick Industries,Jagdalpur,Industrial Plant,12.11,2023-05-20,,MoM Generated,3,0.38
+Riverbed Minerals Pvt,Durg,Limestone Quarry,2.51,2024-03-10,,EDS,2,0.25
+Central India Mining Co,Raipur,Limestone Quarry,11.5,2024-02-03,,Rejected,3,0.26
+Sunrise Quarry Co,Raigarh,Infrastructure,3.08,2023-05-01,,EDS,0,0.57
+Central India Mining Co,Bilaspur,Brick Kiln,5.7,2023-01-08,,MoM Generated,1,0.86
+Raigarh Aggregates,Bilaspur,Sand Mining,14.57,2023-03-01,,EDS,3,0.63
+Central India Mining Co,Jagdalpur,Industrial Plant,4.54,2024-10-11,,EDS,1,0.64
+Chhattisgarh Infra Group,Jagdalpur,Industrial Plant,3.6,2023-09-14,,MoM Generated,0,0.28
+Shakti Infra Projects,Rajnandgaon,Brick Kiln,11.45,2023-10-04,,Rejected,1,0.33
+Green Earth Infrastructure,Raipur,Limestone Quarry,4.64,2024-09-12,2024-10-10,Approved,0,0.65
+ABC Mining Ltd,Korba,Infrastructure,7.26,2023-10-21,,MoM Generated,1,0.72
+EcoBuild Developers,Raigarh,Brick Kiln,13.55,2024-08-23,2024-12-03,Approved,0,0.66
+Mahanadi Sand Works,Durg,Infrastructure,2.4,2024-02-02,,EDS,3,0.59
+Raigarh Aggregates,Korba,Infrastructure,14.04,2024-02-17,,Rejected,0,0.14
+Shiv Brick Industries,Korba,Limestone Quarry,3.4,2024-08-08,,MoM Generated,2,0.7
+Mahanadi Sand Works,Raigarh,Brick Kiln,11.38,2024-09-01,,Rejected,0,0.49
+Chhattisgarh Infra Group,Bilaspur,Sand Mining,12.61,2024-09-19,,EDS,0,0.25
+Korba Limestone Corp,Rajnandgaon,Sand Mining,9.64,2023-08-27,,Rejected,1,0.19
+Riverbed Minerals Pvt,Durg,Sand Mining,4.17,2023-06-14,,Under Scrutiny,2,0.3
+Mahanadi Sand Works,Durg,Brick Kiln,12.92,2023-07-28,,MoM Generated,1,0.13
+Green Earth Infrastructure,Raigarh,Infrastructure,2.5,2024-02-06,2024-06-03,Approved,3,0.23
+Chhattisgarh Infra Group,Durg,Sand Mining,4.57,2023-10-02,,MoM Generated,0,0.24
+Shakti Infra Projects,Korba,Brick Kiln,12.25,2024-01-24,,EDS,1,0.16
+Bastar Natural Resources,Raipur,Brick Kiln,12.22,2024-12-01,2025-01-23,Approved,2,0.71
+EcoStone Extractors,Bilaspur,Industrial Plant,13.07,2023-06-08,,MoM Generated,3,0.8
+ABC Mining Ltd,Kanker,Industrial Plant,5.01,2024-08-13,,Referred,0,0.58
+Green Earth Infrastructure,Jagdalpur,Limestone Quarry,12.95,2023-03-05,2023-05-19,Approved,3,0.72
+Mahanadi Sand Works,Kanker,Limestone Quarry,13.28,2024-05-24,,EDS,3,0.27
+Mahanadi Sand Works,Bilaspur,Infrastructure,2.65,2023-10-25,,EDS,3,0.2
+Korba Limestone Corp,Kanker,Sand Mining,2.19,2024-04-07,2024-07-17,Approved,0,0.87
+Bastar Natural Resources,Raigarh,Limestone Quarry,10.11,2023-05-12,,Referred,2,0.42
+Mahanadi Sand Works,Korba,Industrial Plant,10.27,2024-01-20,,Rejected,3,0.54
+Chhattisgarh Infra Group,Durg,Infrastructure,13.15,2023-05-02,,Under Scrutiny,1,0.64
+Shakti Infra Projects,Raigarh,Industrial Plant,7.9,2024-10-09,,MoM Generated,3,0.12
+Korba Limestone Corp,Korba,Brick Kiln,14.53,2024-05-06,,Under Scrutiny,3,0.44
+EcoBuild Developers,Durg,Industrial Plant,3.91,2023-03-26,,MoM Generated,3,0.55
+EcoBuild Developers,Raigarh,Brick Kiln,9.09,2024-06-08,,EDS,0,0.9
+EcoStone Extractors,Kanker,Sand Mining,14.14,2023-01-14,2023-05-08,Approved,0,0.78
+Shiv Brick Industries,Ambikapur,Brick Kiln,14.94,2023-03-28,,MoM Generated,0,0.2
+Bastar Natural Resources,Raipur,Brick Kiln,4.11,2023-10-26,,EDS,1,0.85
+Raigarh Aggregates,Raipur,Sand Mining,13.98,2024-06-16,,EDS,1,0.49
+Sunrise Quarry Co,Durg,Industrial Plant,6.92,2024-06-14,,Under Scrutiny,0,0.15
+EcoBuild Developers,Raigarh,Brick Kiln,8.98,2024-02-12,2024-03-07,Approved,1,0.38
+Korba Limestone Corp,Korba,Limestone Quarry,14.84,2023-07-12,2023-10-24,Approved,2,0.72
+Green Earth Infrastructure,Jagdalpur,Sand Mining,6.27,2023-07-02,,Under Scrutiny,3,0.32
+Durg Construction Pvt Ltd,Durg,Brick Kiln,7.5,2023-06-14,,Under Scrutiny,2,0.64
+ABC Mining Ltd,Ambikapur,Brick Kiln,8.88,2024-09-11,,Rejected,2,0.53
+Green Earth Infrastructure,Ambikapur,Sand Mining,14.71,2023-04-26,2023-08-19,Approved,2,0.59
+Riverbed Minerals Pvt,Ambikapur,Sand Mining,11.77,2023-05-26,,EDS,0,0.85
+Durg Construction Pvt Ltd,Kanker,Brick Kiln,10.53,2023-09-01,,MoM Generated,3,0.29
+Shakti Infra Projects,Korba,Brick Kiln,13.49,2024-05-10,,Rejected,0,0.88
+Korba Limestone Corp,Durg,Limestone Quarry,12.43,2024-10-31,,Referred,3,0.3
+Green Earth Infrastructure,Kanker,Infrastructure,7.8,2023-01-02,,MoM Generated,2,0.34
+Bastar Natural Resources,Rajnandgaon,Industrial Plant,1.13,2023-05-04,,Under Scrutiny,0,0.21
+Sunrise Quarry Co,Jagdalpur,Infrastructure,10.83,2023-02-23,,MoM Generated,3,0.87
+Shakti Infra Projects,Raigarh,Infrastructure,13.45,2024-05-31,2024-06-28,Approved,1,0.67
+Raigarh Aggregates,Kanker,Infrastructure,14.83,2024-05-20,,MoM Generated,2,0.66
+Sunrise Quarry Co,Ambikapur,Industrial Plant,9.66,2024-09-26,,Referred,3,0.39
+Riverbed Minerals Pvt,Durg,Limestone Quarry,13.17,2023-02-04,2023-05-04,Approved,3,0.58
+Shiv Brick Industries,Kanker,Industrial Plant,8.35,2024-01-20,,Referred,1,0.76
+Sunrise Quarry Co,Durg,Sand Mining,8.5,2023-08-17,,Under Scrutiny,2,0.34
+EcoStone Extractors,Bilaspur,Industrial Plant,12.48,2023-01-20,,Rejected,0,0.23
+Korba Limestone Corp,Jagdalpur,Industrial Plant,5.07,2023-04-08,,Referred,0,0.15
+Chhattisgarh Infra Group,Kanker,Sand Mining,7.09,2023-03-19,,EDS,1,0.53
+Mahanadi Sand Works,Korba,Industrial Plant,9.79,2023-09-09,,Under Scrutiny,2,0.44
+Durg Construction Pvt Ltd,Kanker,Infrastructure,13.67,2023-06-15,,Rejected,0,0.53
+Shiv Brick Industries,Bilaspur,Limestone Quarry,12.42,2024-09-29,,Rejected,2,0.59
+Mahanadi Sand Works,Bilaspur,Limestone Quarry,6.65,2023-12-05,,Under Scrutiny,2,0.35
+Shakti Infra Projects,Durg,Brick Kiln,12.19,2023-12-18,,MoM Generated,3,0.16
+Central India Mining Co,Ambikapur,Infrastructure,1.1,2024-04-01,2024-07-26,Approved,1,0.29
+Bastar Natural Resources,Jagdalpur,Infrastructure,4.7,2023-11-21,,Referred,0,0.65
+Korba Limestone Corp,Durg,Brick Kiln,11.71,2024-01-16,2024-03-20,Approved,2,0.3
+Green Earth Infrastructure,Bilaspur,Brick Kiln,7.92,2023-11-15,,MoM Generated,1,0.37
+Shakti Infra Projects,Ambikapur,Industrial Plant,7.11,2023-09-10,,MoM Generated,0,0.8
+Shiv Brick Industries,Raipur,Limestone Quarry,2.76,2023-10-13,,Under Scrutiny,2,0.52
+Raigarh Aggregates,Bilaspur,Infrastructure,1.46,2023-07-30,,Rejected,2,0.2
+Mahanadi Sand Works,Raigarh,Brick Kiln,9.79,2024-05-15,,Referred,0,0.34
+Mahanadi Sand Works,Raipur,Brick Kiln,3.58,2023-09-11,,Referred,1,0.31
+Shiv Brick Industries,Ambikapur,Sand Mining,1.71,2023-03-03,,Referred,3,0.18
+Korba Limestone Corp,Ambikapur,Sand Mining,13.07,2023-09-12,,EDS,0,0.69
+Green Earth Infrastructure,Raigarh,Infrastructure,14.9,2023-06-11,,Rejected,0,0.26
+ABC Mining Ltd,Bilaspur,Sand Mining,3.63,2024-05-09,2024-08-14,Approved,1,0.88
+Korba Limestone Corp,Durg,Limestone Quarry,10.22,2023-10-25,,EDS,0,0.66
+Durg Construction Pvt Ltd,Bilaspur,Infrastructure,14.53,2024-03-24,,Rejected,1,0.28
+Korba Limestone Corp,Rajnandgaon,Brick Kiln,12.37,2024-05-03,2024-06-16,Approved,2,0.9
+Riverbed Minerals Pvt,Kanker,Infrastructure,5.15,2024-05-03,,Rejected,2,0.2
+Durg Construction Pvt Ltd,Rajnandgaon,Infrastructure,11.27,2024-11-04,2025-02-01,Approved,2,0.67
+Riverbed Minerals Pvt,Jagdalpur,Limestone Quarry,2.57,2024-04-08,,MoM Generated,3,0.23
+Chhattisgarh Infra Group,Bilaspur,Brick Kiln,7.87,2024-02-08,,EDS,0,0.44
+Central India Mining Co,Ambikapur,Infrastructure,9.01,2023-10-25,2023-11-09,Approved,3,0.86
+EcoBuild Developers,Bilaspur,Infrastructure,9.55,2023-03-02,,Referred,2,0.43
+Shakti Infra Projects,Rajnandgaon,Industrial Plant,7.67,2023-06-26,,MoM Generated,0,0.64
+ABC Mining Ltd,Durg,Brick Kiln,10.08,2024-03-16,,Under Scrutiny,3,0.59
+Central India Mining Co,Kanker,Infrastructure,2.12,2024-07-09,,Referred,3,0.15
+Durg Construction Pvt Ltd,Kanker,Sand Mining,11.23,2024-04-16,,Rejected,0,0.88
+ABC Mining Ltd,Korba,Industrial Plant,2.86,2024-08-28,,MoM Generated,0,0.43
+Durg Construction Pvt Ltd,Bilaspur,Limestone Quarry,12.38,2024-07-25,,Referred,1,0.8
+Shakti Infra Projects,Kanker,Limestone Quarry,2.68,2023-04-13,2023-06-02,Approved,0,0.26
+Riverbed Minerals Pvt,Rajnandgaon,Limestone Quarry,5.51,2024-05-10,2024-09-05,Approved,1,0.69
+Mahanadi Sand Works,Durg,Limestone Quarry,11.86,2024-09-18,,Referred,3,0.47
+Green Earth Infrastructure,Durg,Industrial Plant,3.11,2024-02-06,,MoM Generated,0,0.67
+Raigarh Aggregates,Rajnandgaon,Sand Mining,12.09,2023-05-20,,Referred,0,0.15
+Chhattisgarh Infra Group,Jagdalpur,Industrial Plant,12.67,2023-11-10,,Rejected,0,0.21
+Sunrise Quarry Co,Ambikapur,Brick Kiln,7.22,2023-10-24,,EDS,1,0.48
+Green Earth Infrastructure,Kanker,Brick Kiln,12.07,2024-09-11,,EDS,0,0.51
+EcoStone Extractors,Korba,Limestone Quarry,14.33,2024-06-30,,Under Scrutiny,1,0.28
+Central India Mining Co,Bilaspur,Limestone Quarry,11.04,2023-10-18,,Referred,1,0.59
+Sunrise Quarry Co,Jagdalpur,Limestone Quarry,5.59,2023-08-25,,MoM Generated,2,0.12
+ABC Mining Ltd,Jagdalpur,Infrastructure,12.4,2023-04-01,,EDS,1,0.83
+Central India Mining Co,Rajnandgaon,Brick Kiln,14.99,2024-03-13,2024-04-17,Approved,1,0.61
+ABC Mining Ltd,Raigarh,Sand Mining,3.04,2023-08-15,2023-10-09,Approved,1,0.43
+Bastar Natural Resources,Kanker,Infrastructure,9.46,2024-08-01,,EDS,1,0.19
+Bastar Natural Resources,Kanker,Limestone Quarry,11.14,2024-08-04,,MoM Generated,2,0.7
+EcoStone Extractors,Rajnandgaon,Brick Kiln,8.1,2023-12-30,,EDS,1,0.46
+Chhattisgarh Infra Group,Rajnandgaon,Infrastructure,4.54,2023-05-27,,MoM Generated,0,0.53
+Bastar Natural Resources,Kanker,Brick Kiln,10.46,2024-06-10,,MoM Generated,0,0.56
+Bastar Natural Resources,Korba,Brick Kiln,10.46,2024-08-14,,Under Scrutiny,0,0.86
+Sunrise Quarry Co,Raipur,Brick Kiln,13.77,2023-09-01,,Under Scrutiny,2,0.11
+Chhattisgarh Infra Group,Jagdalpur,Limestone Quarry,3.43,2024-10-01,,Referred,3,0.62
+EcoBuild Developers,Bilaspur,Industrial Plant,12.78,2024-11-11,,Referred,3,0.16
+Durg Construction Pvt Ltd,Ambikapur,Sand Mining,10.66,2023-08-02,,Under Scrutiny,3,0.28
+Bastar Natural Resources,Rajnandgaon,Limestone Quarry,5.91,2023-01-27,,EDS,1,0.36
+Raigarh Aggregates,Ambikapur,Limestone Quarry,10.57,2023-04-27,,EDS,2,0.72
+EcoStone Extractors,Raipur,Brick Kiln,3.98,2024-07-31,,EDS,3,0.86
+Central India Mining Co,Rajnandgaon,Infrastructure,4.37,2024-05-10,,Referred,0,0.36
+Shiv Brick Industries,Bilaspur,Industrial Plant,11.42,2023-08-13,2023-10-06,Approved,2,0.86
+Korba Limestone Corp,Jagdalpur,Industrial Plant,5.81,2023-09-09,2023-11-08,Approved,2,0.23
+Bastar Natural Resources,Raigarh,Limestone Quarry,2.92,2024-10-03,,Referred,0,0.46
+Durg Construction Pvt Ltd,Bilaspur,Infrastructure,8.69,2024-10-22,,MoM Generated,3,0.72
+Shiv Brick Industries,Ambikapur,Infrastructure,3.38,2024-04-17,,EDS,0,0.38
+EcoBuild Developers,Ambikapur,Industrial Plant,2.38,2024-09-28,2024-10-29,Approved,1,0.41
+Mahanadi Sand Works,Jagdalpur,Brick Kiln,5.94,2023-05-02,,Rejected,2,0.31
+Chhattisgarh Infra Group,Korba,Brick Kiln,9.93,2023-05-14,,MoM Generated,0,0.52
+Chhattisgarh Infra Group,Ambikapur,Sand Mining,14.38,2023-11-05,,Rejected,3,0.54
+Riverbed Minerals Pvt,Rajnandgaon,Limestone Quarry,14.98,2024-11-19,,Rejected,3,0.28
+Bastar Natural Resources,Durg,Brick Kiln,10.9,2023-04-05,,Rejected,1,0.68
+Sunrise Quarry Co,Rajnandgaon,Sand Mining,5.1,2023-09-25,,Under Scrutiny,1,0.33
+Chhattisgarh Infra Group,Raigarh,Limestone Quarry,13.56,2023-07-20,2023-09-26,Approved,1,0.4
+Riverbed Minerals Pvt,Ambikapur,Infrastructure,1.91,2024-01-20,,MoM Generated,3,0.88
+EcoStone Extractors,Kanker,Infrastructure,12.31,2023-01-13,,Rejected,0,0.82
+Chhattisgarh Infra Group,Ambikapur,Industrial Plant,13.46,2023-04-28,,MoM Generated,0,0.37
+Mahanadi Sand Works,Raipur,Infrastructure,7.14,2023-12-02,2024-02-14,Approved,2,0.78
+EcoBuild Developers,Durg,Infrastructure,11.9,2023-09-04,,MoM Generated,2,0.35
+Shiv Brick Industries,Kanker,Sand Mining,3.88,2024-10-11,,EDS,2,0.3
+EcoStone Extractors,Ambikapur,Infrastructure,7.07,2024-08-04,,MoM Generated,2,0.75
+Shiv Brick Industries,Raigarh,Industrial Plant,7.14,2023-02-12,,Referred,3,0.24
+Raigarh Aggregates,Durg,Brick Kiln,2.25,2024-05-21,,MoM Generated,3,0.69
+Korba Limestone Corp,Rajnandgaon,Brick Kiln,11.96,2023-10-21,,Referred,2,0.2
+Bastar Natural Resources,Jagdalpur,Infrastructure,12.64,2024-06-23,,Rejected,1,0.48
+EcoStone Extractors,Kanker,Industrial Plant,13.9,2023-09-24,,Referred,0,0.67
+EcoStone Extractors,Jagdalpur,Infrastructure,14.91,2023-08-04,,Under Scrutiny,2,0.31
+EcoBuild Developers,Korba,Infrastructure,10.42,2023-01-25,2023-05-04,Approved,1,0.6
+Chhattisgarh Infra Group,Rajnandgaon,Brick Kiln,5.01,2023-05-09,,Rejected,1,0.52
+Chhattisgarh Infra Group,Kanker,Limestone Quarry,6.61,2023-09-03,,MoM Generated,0,0.3
+Central India Mining Co,Ambikapur,Brick Kiln,2.01,2024-03-20,,Rejected,0,0.84
+Shiv Brick Industries,Korba,Infrastructure,6.6,2023-12-21,,MoM Generated,3,0.51
+Chhattisgarh Infra Group,Bilaspur,Sand Mining,3.32,2024-09-08,,Rejected,0,0.81
+Mahanadi Sand Works,Jagdalpur,Brick Kiln,8.08,2024-09-01,,MoM Generated,2,0.48
+Mahanadi Sand Works,Ambikapur,Industrial Plant,5.15,2023-08-10,2023-10-30,Approved,3,0.86
+Sunrise Quarry Co,Kanker,Infrastructure,4.41,2023-01-14,,Under Scrutiny,0,0.81
+Riverbed Minerals Pvt,Rajnandgaon,Brick Kiln,12.49,2023-01-24,,MoM Generated,2,0.41
+Raigarh Aggregates,Korba,Industrial Plant,11.7,2023-04-03,,Under Scrutiny,1,0.46
+Chhattisgarh Infra Group,Bilaspur,Infrastructure,8.14,2024-10-21,2025-02-06,Approved,0,0.26
+Korba Limestone Corp,Kanker,Limestone Quarry,10.61,2023-07-06,,Rejected,1,0.75
+EcoBuild Developers,Bilaspur,Brick Kiln,8.52,2024-08-26,2024-09-17,Approved,0,0.45
+Shakti Infra Projects,Kanker,Brick Kiln,8.37,2023-05-03,,MoM Generated,0,0.69
+Korba Limestone Corp,Raigarh,Industrial Plant,4.27,2024-02-16,2024-04-21,Approved,1,0.62
+Green Earth Infrastructure,Raigarh,Industrial Plant,14.6,2023-06-15,,Under Scrutiny,1,0.59
+ABC Mining Ltd,Raipur,Limestone Quarry,10.17,2023-10-21,,Rejected,1,0.42
+Sunrise Quarry Co,Raigarh,Sand Mining,11.66,2023-03-30,,Under Scrutiny,0,0.16
+Raigarh Aggregates,Jagdalpur,Industrial Plant,13.59,2023-10-13,,MoM Generated,0,0.52
+Riverbed Minerals Pvt,Raigarh,Brick Kiln,1.63,2024-07-20,,MoM Generated,1,0.5
+Shakti Infra Projects,Bilaspur,Industrial Plant,4.59,2023-08-01,,MoM Generated,3,0.41
+Korba Limestone Corp,Raigarh,Industrial Plant,11.75,2024-06-22,,Rejected,3,0.83
+Central India Mining Co,Raipur,Limestone Quarry,5.87,2023-10-03,2023-11-30,Approved,3,0.74
+Chhattisgarh Infra Group,Jagdalpur,Limestone Quarry,7.53,2024-08-07,,MoM Generated,0,0.64
+Shiv Brick Industries,Kanker,Sand Mining,1.03,2023-09-20,,MoM Generated,2,0.21
+Shiv Brick Industries,Bilaspur,Infrastructure,3.87,2024-06-12,,Referred,3,0.17
+Sunrise Quarry Co,Rajnandgaon,Infrastructure,5.65,2024-07-27,2024-08-24,Approved,0,0.4
+Raigarh Aggregates,Rajnandgaon,Industrial Plant,7.09,2024-08-21,,Under Scrutiny,1,0.7
+Shakti Infra Projects,Kanker,Industrial Plant,13.74,2023-08-29,,Referred,0,0.13
+Shakti Infra Projects,Bilaspur,Limestone Quarry,2.0,2024-07-25,,MoM Generated,1,0.5
+Bastar Natural Resources,Jagdalpur,Limestone Quarry,8.68,2023-07-20,,EDS,3,0.38
+Central India Mining Co,Jagdalpur,Limestone Quarry,4.82,2024-09-25,,Under Scrutiny,2,0.27
+Shakti Infra Projects,Raigarh,Brick Kiln,2.82,2024-02-07,,EDS,2,0.58
+Korba Limestone Corp,Korba,Brick Kiln,9.16,2023-01-11,,MoM Generated,1,0.16
+Korba Limestone Corp,Bilaspur,Infrastructure,8.48,2024-06-05,,Rejected,3,0.25
+Mahanadi Sand Works,Jagdalpur,Infrastructure,11.26,2024-09-21,,MoM Generated,1,0.52
+Mahanadi Sand Works,Kanker,Industrial Plant,14.38,2023-12-29,,Under Scrutiny,1,0.77
+Sunrise Quarry Co,Raigarh,Industrial Plant,5.68,2023-03-14,,EDS,3,0.9
+Shakti Infra Projects,Bilaspur,Brick Kiln,11.87,2023-07-29,2023-10-18,Approved,2,0.4
+EcoStone Extractors,Bilaspur,Brick Kiln,11.55,2024-10-06,,Referred,3,0.77
+Sunrise Quarry Co,Rajnandgaon,Limestone Quarry,6.25,2023-05-29,2023-07-17,Approved,2,0.31
+Green Earth Infrastructure,Raigarh,Brick Kiln,9.83,2024-08-18,,Referred,3,0.15
+Shakti Infra Projects,Kanker,Industrial Plant,12.67,2024-10-06,,Referred,0,0.63
+EcoBuild Developers,Raipur,Brick Kiln,6.14,2024-05-22,,EDS,2,0.17
+Central India Mining Co,Raigarh,Sand Mining,1.46,2024-04-20,,EDS,0,0.37
+EcoBuild Developers,Raigarh,Sand Mining,9.67,2023-09-17,,Under Scrutiny,3,0.7
+Korba Limestone Corp,Jagdalpur,Industrial Plant,12.26,2023-12-04,,Referred,2,0.79
+ABC Mining Ltd,Rajnandgaon,Industrial Plant,2.35,2024-07-05,,EDS,0,0.45
+Raigarh Aggregates,Jagdalpur,Brick Kiln,1.05,2023-01-12,,Rejected,0,0.67
+EcoBuild Developers,Raigarh,Brick Kiln,1.56,2024-04-27,,MoM Generated,0,0.75
+ABC Mining Ltd,Kanker,Sand Mining,3.11,2023-07-04,,Rejected,0,0.76
+ABC Mining Ltd,Durg,Sand Mining,7.11,2024-08-12,,Rejected,3,0.12
+Shiv Brick Industries,Kanker,Industrial Plant,5.22,2023-03-30,2023-07-23,Approved,2,0.17
+Riverbed Minerals Pvt,Rajnandgaon,Industrial Plant,13.78,2023-11-29,,MoM Generated,0,0.11
+EcoStone Extractors,Raipur,Brick Kiln,5.52,2024-05-14,,MoM Generated,3,0.8
+Shakti Infra Projects,Ambikapur,Sand Mining,6.86,2023-04-21,,MoM Generated,3,0.61
+EcoStone Extractors,Durg,Industrial Plant,1.31,2023-07-29,,MoM Generated,0,0.43
+Green Earth Infrastructure,Raipur,Limestone Quarry,3.57,2023-06-12,2023-08-14,Approved,3,0.29
+Raigarh Aggregates,Kanker,Sand Mining,5.77,2023-07-11,,MoM Generated,2,0.49
+Raigarh Aggregates,Rajnandgaon,Industrial Plant,5.89,2024-07-22,2024-08-20,Approved,3,0.84
+Central India Mining Co,Bilaspur,Brick Kiln,6.9,2024-11-27,,Rejected,2,0.62
+Riverbed Minerals Pvt,Jagdalpur,Brick Kiln,10.55,2024-03-04,,Under Scrutiny,1,0.28
+Riverbed Minerals Pvt,Raipur,Sand Mining,2.79,2023-10-24,,Rejected,0,0.85
+Sunrise Quarry Co,Kanker,Brick Kiln,10.44,2024-07-12,,Referred,2,0.53
+Sunrise Quarry Co,Kanker,Limestone Quarry,9.53,2023-06-08,,Under Scrutiny,1,0.89
+Shiv Brick Industries,Bilaspur,Limestone Quarry,4.32,2024-04-11,,EDS,3,0.3
+Green Earth Infrastructure,Durg,Sand Mining,13.1,2023-03-25,,MoM Generated,2,0.49
+Shiv Brick Industries,Durg,Infrastructure,5.05,2023-12-09,,Under Scrutiny,0,0.31
+Mahanadi Sand Works,Korba,Industrial Plant,5.79,2024-02-14,,MoM Generated,2,0.72
+Mahanadi Sand Works,Jagdalpur,Industrial Plant,8.46,2023-01-04,,EDS,1,0.87
+Korba Limestone Corp,Jagdalpur,Infrastructure,6.38,2024-10-26,,EDS,2,0.85
+Central India Mining Co,Kanker,Limestone Quarry,9.11,2024-01-29,,EDS,0,0.67
+Riverbed Minerals Pvt,Jagdalpur,Sand Mining,9.73,2023-06-14,,MoM Generated,0,0.22
+Bastar Natural Resources,Rajnandgaon,Limestone Quarry,3.51,2023-06-13,,Referred,3,0.83
+Shiv Brick Industries,Kanker,Industrial Plant,8.77,2024-03-29,,Rejected,0,0.2
+Sunrise Quarry Co,Jagdalpur,Limestone Quarry,1.48,2024-08-18,,Referred,0,0.51
+EcoBuild Developers,Ambikapur,Infrastructure,7.45,2023-10-20,,Referred,0,0.25
+EcoBuild Developers,Raigarh,Sand Mining,8.65,2023-03-31,,EDS,2,0.35
+Chhattisgarh Infra Group,Ambikapur,Infrastructure,11.41,2024-03-14,2024-04-12,Approved,2,0.9
+Mahanadi Sand Works,Ambikapur,Limestone Quarry,13.13,2024-07-22,,Referred,1,0.32
+Green Earth Infrastructure,Korba,Sand Mining,12.78,2023-12-23,,Rejected,0,0.3
+Bastar Natural Resources,Jagdalpur,Limestone Quarry,11.32,2024-04-22,2024-08-12,Approved,3,0.25
+Shakti Infra Projects,Bilaspur,Brick Kiln,8.28,2023-12-17,,Under Scrutiny,3,0.83
+Chhattisgarh Infra Group,Ambikapur,Limestone Quarry,3.89,2024-09-29,,Under Scrutiny,1,0.27
+Central India Mining Co,Raigarh,Sand Mining,4.17,2024-02-16,,EDS,1,0.84
+Central India Mining Co,Jagdalpur,Industrial Plant,12.2,2023-06-01,,MoM Generated,2,0.88
+Korba Limestone Corp,Durg,Industrial Plant,2.53,2024-05-01,,EDS,3,0.23
+Riverbed Minerals Pvt,Jagdalpur,Limestone Quarry,14.18,2024-06-20,2024-09-27,Approved,2,0.2
+Durg Construction Pvt Ltd,Ambikapur,Infrastructure,10.27,2023-09-26,,MoM Generated,0,0.14
+Korba Limestone Corp,Bilaspur,Limestone Quarry,6.58,2023-03-04,2023-06-06,Approved,1,0.9
+EcoBuild Developers,Raigarh,Brick Kiln,6.09,2024-10-28,,Rejected,3,0.52
+Riverbed Minerals Pvt,Jagdalpur,Limestone Quarry,11.34,2024-07-12,,Rejected,2,0.75
+Bastar Natural Resources,Rajnandgaon,Infrastructure,6.01,2023-07-18,,Under Scrutiny,0,0.42
+Shakti Infra Projects,Ambikapur,Industrial Plant,5.37,2023-04-10,,Referred,2,0.34
+Shakti Infra Projects,Korba,Sand Mining,14.13,2023-04-03,,Rejected,1,0.28
+Green Earth Infrastructure,Ambikapur,Industrial Plant,8.39,2024-08-18,2024-09-11,Approved,3,0.14
+Green Earth Infrastructure,Raigarh,Industrial Plant,12.67,2023-04-13,,Referred,0,0.41
+Raigarh Aggregates,Bilaspur,Infrastructure,3.27,2024-04-02,,Referred,1,0.22
+ABC Mining Ltd,Durg,Limestone Quarry,7.43,2024-04-01,,Under Scrutiny,3,0.26
+Bastar Natural Resources,Bilaspur,Limestone Quarry,4.61,2023-04-25,2023-06-25,Approved,3,0.38
+ABC Mining Ltd,Korba,Brick Kiln,4.93,2024-08-24,2024-11-15,Approved,3,0.84
+EcoBuild Developers,Kanker,Infrastructure,5.01,2024-07-07,,Under Scrutiny,2,0.79
+Mahanadi Sand Works,Kanker,Industrial Plant,13.56,2024-02-20,2024-03-09,Approved,2,0.19
+Shakti Infra Projects,Kanker,Infrastructure,1.53,2024-04-06,2024-04-30,Approved,0,0.33
+Riverbed Minerals Pvt,Durg,Brick Kiln,11.31,2023-10-23,,Under Scrutiny,2,0.61
+Riverbed Minerals Pvt,Raipur,Limestone Quarry,14.75,2024-10-19,,Under Scrutiny,3,0.67
+EcoBuild Developers,Ambikapur,Brick Kiln,8.14,2023-04-21,,Referred,3,0.5
+Durg Construction Pvt Ltd,Raipur,Industrial Plant,6.66,2024-04-16,,MoM Generated,2,0.47
+ABC Mining Ltd,Bilaspur,Sand Mining,11.24,2023-05-13,,EDS,3,0.79
+Durg Construction Pvt Ltd,Raigarh,Limestone Quarry,4.37,2024-11-01,,Rejected,2,0.15
+Riverbed Minerals Pvt,Korba,Industrial Plant,6.46,2024-10-13,,EDS,3,0.67
+Green Earth Infrastructure,Rajnandgaon,Industrial Plant,11.58,2024-02-10,,Rejected,3,0.24
+Sunrise Quarry Co,Raigarh,Industrial Plant,12.98,2023-10-06,,MoM Generated,3,0.52
+Korba Limestone Corp,Raigarh,Infrastructure,3.59,2023-02-21,,Under Scrutiny,0,0.88
+Mahanadi Sand Works,Ambikapur,Brick Kiln,2.08,2023-03-27,2023-07-04,Approved,1,0.15
+EcoStone Extractors,Korba,Infrastructure,7.57,2024-10-08,,Under Scrutiny,1,0.47
+EcoStone Extractors,Raipur,Sand Mining,1.75,2023-11-13,2024-01-18,Approved,0,0.75
+Bastar Natural Resources,Raipur,Infrastructure,2.37,2023-10-26,,Rejected,2,0.27
+Green Earth Infrastructure,Raipur,Sand Mining,8.99,2023-12-17,,Referred,2,0.37
+EcoBuild Developers,Korba,Infrastructure,4.91,2024-01-12,2024-04-04,Approved,2,0.59
+Central India Mining Co,Korba,Infrastructure,12.48,2023-03-12,,Under Scrutiny,0,0.71
+Shakti Infra Projects,Korba,Infrastructure,6.71,2023-08-04,,EDS,0,0.69
+ABC Mining Ltd,Ambikapur,Infrastructure,12.0,2024-04-23,,EDS,3,0.6
+Durg Construction Pvt Ltd,Raipur,Brick Kiln,11.64,2023-09-26,,EDS,3,0.53
+EcoBuild Developers,Ambikapur,Infrastructure,11.25,2023-09-12,,EDS,3,0.27
+Sunrise Quarry Co,Rajnandgaon,Limestone Quarry,4.16,2023-09-13,,EDS,2,0.89
+EcoBuild Developers,Raigarh,Brick Kiln,2.77,2024-05-09,,MoM Generated,1,0.88
+Shiv Brick Industries,Rajnandgaon,Infrastructure,11.77,2023-11-08,,EDS,1,0.3
+ABC Mining Ltd,Raigarh,Limestone Quarry,13.17,2024-10-09,,Under Scrutiny,3,0.73
+Korba Limestone Corp,Durg,Sand Mining,10.12,2024-04-12,2024-06-14,Approved,0,0.87
+Riverbed Minerals Pvt,Raipur,Sand Mining,12.28,2023-06-08,,EDS,0,0.59
+Riverbed Minerals Pvt,Durg,Limestone Quarry,2.5,2024-01-13,,EDS,2,0.36
+Bastar Natural Resources,Korba,Brick Kiln,7.3,2024-08-12,,EDS,2,0.53
+Durg Construction Pvt Ltd,Jagdalpur,Infrastructure,4.68,2023-12-31,,Rejected,3,0.76
+Korba Limestone Corp,Durg,Sand Mining,14.74,2023-04-12,,Referred,2,0.27
+Shakti Infra Projects,Bilaspur,Brick Kiln,13.52,2024-02-13,2024-05-27,Approved,3,0.65
+Green Earth Infrastructure,Raigarh,Infrastructure,14.3,2024-07-05,,Referred,2,0.17
+Shakti Infra Projects,Raigarh,Limestone Quarry,8.21,2023-04-08,,Rejected,3,0.13
+Bastar Natural Resources,Rajnandgaon,Industrial Plant,3.61,2023-05-22,,MoM Generated,0,0.55
+Bastar Natural Resources,Ambikapur,Limestone Quarry,9.41,2024-08-28,,Referred,0,0.19
+Shakti Infra Projects,Korba,Sand Mining,1.79,2024-04-16,,Referred,1,0.88
+Sunrise Quarry Co,Raigarh,Brick Kiln,13.5,2023-07-24,,MoM Generated,2,0.65
+Raigarh Aggregates,Kanker,Infrastructure,4.97,2024-06-23,,Referred,3,0.49
+Riverbed Minerals Pvt,Ambikapur,Industrial Plant,5.28,2023-05-07,,EDS,2,0.72
+Mahanadi Sand Works,Bilaspur,Limestone Quarry,14.53,2024-08-13,,Under Scrutiny,2,0.35
+Durg Construction Pvt Ltd,Rajnandgaon,Infrastructure,4.34,2023-11-10,2023-12-04,Approved,0,0.72
+Shiv Brick Industries,Jagdalpur,Brick Kiln,12.77,2024-09-10,,EDS,2,0.15
+Riverbed Minerals Pvt,Kanker,Sand Mining,7.73,2024-03-18,,Referred,2,0.43
+Green Earth Infrastructure,Rajnandgaon,Sand Mining,6.03,2023-11-05,,Referred,0,0.67
+ABC Mining Ltd,Korba,Sand Mining,9.05,2023-01-21,,Rejected,3,0.71
+Sunrise Quarry Co,Korba,Industrial Plant,10.91,2023-08-12,,MoM Generated,2,0.25
+Durg Construction Pvt Ltd,Rajnandgaon,Limestone Quarry,11.44,2024-05-09,2024-06-16,Approved,0,0.25
+Chhattisgarh Infra Group,Bilaspur,Sand Mining,5.52,2023-09-24,2024-01-04,Approved,0,0.13
+ABC Mining Ltd,Raigarh,Infrastructure,4.86,2024-01-12,,MoM Generated,3,0.88
+Green Earth Infrastructure,Jagdalpur,Sand Mining,12.1,2024-06-18,,EDS,3,0.26
+Raigarh Aggregates,Ambikapur,Industrial Plant,4.44,2024-07-25,,EDS,0,0.27
+Raigarh Aggregates,Raipur,Brick Kiln,14.5,2024-07-17,,Referred,0,0.64
+EcoStone Extractors,Kanker,Sand Mining,8.37,2023-06-23,,MoM Generated,1,0.62
+Mahanadi Sand Works,Bilaspur,Limestone Quarry,9.1,2024-04-16,2024-07-25,Approved,1,0.85
+Chhattisgarh Infra Group,Raigarh,Brick Kiln,9.16,2024-11-03,,Referred,0,0.5
+ABC Mining Ltd,Bilaspur,Sand Mining,13.36,2023-09-05,,Under Scrutiny,3,0.84
+EcoBuild Developers,Kanker,Industrial Plant,5.85,2023-12-13,,Rejected,1,0.34
+ABC Mining Ltd,Rajnandgaon,Limestone Quarry,4.92,2023-02-24,,MoM Generated,3,0.74
+Sunrise Quarry Co,Raipur,Brick Kiln,11.37,2024-05-27,,MoM Generated,3,0.15
+EcoStone Extractors,Rajnandgaon,Infrastructure,13.42,2023-03-29,,Rejected,1,0.47
+Shakti Infra Projects,Jagdalpur,Sand Mining,1.95,2023-01-12,,Rejected,1,0.87
+Bastar Natural Resources,Kanker,Sand Mining,5.99,2024-08-24,,MoM Generated,0,0.55
+Raigarh Aggregates,Jagdalpur,Brick Kiln,12.22,2023-04-25,2023-07-09,Approved,3,0.82
+Riverbed Minerals Pvt,Korba,Sand Mining,13.03,2024-06-13,,EDS,1,0.2
+Bastar Natural Resources,Durg,Brick Kiln,9.8,2023-07-26,,Rejected,0,0.5
+Durg Construction Pvt Ltd,Durg,Limestone Quarry,13.74,2023-08-09,,Referred,0,0.16
+Mahanadi Sand Works,Raigarh,Industrial Plant,4.59,2024-09-12,,Referred,1,0.28
+Central India Mining Co,Raigarh,Industrial Plant,5.32,2023-03-23,,EDS,0,0.11
+Korba Limestone Corp,Jagdalpur,Infrastructure,9.96,2023-07-22,,MoM Generated,1,0.51
+Sunrise Quarry Co,Rajnandgaon,Limestone Quarry,7.35,2024-03-06,,EDS,3,0.67
+Sunrise Quarry Co,Ambikapur,Brick Kiln,6.46,2024-11-12,,Rejected,3,0.45
+Central India Mining Co,Korba,Limestone Quarry,5.71,2023-03-15,,EDS,0,0.75
+EcoStone Extractors,Jagdalpur,Infrastructure,10.67,2024-04-29,,EDS,3,0.28
+Raigarh Aggregates,Jagdalpur,Industrial Plant,7.87,2023-03-15,2023-07-01,Approved,0,0.29
+Sunrise Quarry Co,Ambikapur,Infrastructure,4.97,2023-10-07,,Under Scrutiny,0,0.5
+Central India Mining Co,Korba,Brick Kiln,7.65,2023-04-30,2023-08-27,Approved,2,0.7
+Shiv Brick Industries,Bilaspur,Infrastructure,10.27,2023-09-02,,MoM Generated,2,0.63
+Sunrise Quarry Co,Jagdalpur,Brick Kiln,8.63,2024-10-05,,Under Scrutiny,2,0.42
+Korba Limestone Corp,Bilaspur,Infrastructure,8.39,2023-12-11,,Referred,3,0.25
+Bastar Natural Resources,Korba,Infrastructure,1.93,2024-01-29,,Under Scrutiny,1,0.59
+Bastar Natural Resources,Korba,Infrastructure,1.44,2023-10-28,,MoM Generated,3,0.73
+Bastar Natural Resources,Durg,Brick Kiln,8.53,2024-11-19,,Referred,3,0.41
+Raigarh Aggregates,Jagdalpur,Sand Mining,6.59,2023-08-19,,Referred,2,0.89
+Sunrise Quarry Co,Korba,Brick Kiln,3.33,2024-11-07,,MoM Generated,2,0.63
+Durg Construction Pvt Ltd,Ambikapur,Sand Mining,10.52,2023-03-31,,EDS,3,0.25
+Shiv Brick Industries,Raigarh,Infrastructure,5.47,2024-06-25,,EDS,1,0.15
+Durg Construction Pvt Ltd,Jagdalpur,Sand Mining,11.08,2023-10-29,,EDS,0,0.44
+Durg Construction Pvt Ltd,Raigarh,Industrial Plant,12.93,2023-03-03,,MoM Generated,1,0.74
+Raigarh Aggregates,Rajnandgaon,Limestone Quarry,2.43,2023-11-23,,Rejected,0,0.65
+EcoStone Extractors,Korba,Limestone Quarry,10.64,2023-12-03,,MoM Generated,1,0.52
+Mahanadi Sand Works,Raigarh,Infrastructure,9.47,2023-10-31,,EDS,3,0.4
+Riverbed Minerals Pvt,Durg,Sand Mining,2.28,2023-03-17,,MoM Generated,2,0.36
+Mahanadi Sand Works,Kanker,Sand Mining,8.15,2023-04-01,,Rejected,1,0.63
+Durg Construction Pvt Ltd,Rajnandgaon,Brick Kiln,8.53,2023-08-03,,EDS,3,0.82
+EcoStone Extractors,Jagdalpur,Limestone Quarry,1.69,2024-11-18,,MoM Generated,2,0.49
+Central India Mining Co,Rajnandgaon,Infrastructure,2.86,2023-07-14,,EDS,0,0.84
+Sunrise Quarry Co,Ambikapur,Limestone Quarry,13.0,2024-03-30,,MoM Generated,3,0.26
+Riverbed Minerals Pvt,Durg,Brick Kiln,8.82,2024-11-21,,MoM Generated,2,0.4
