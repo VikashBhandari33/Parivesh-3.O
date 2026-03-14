@@ -8,7 +8,7 @@ import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/a
 import { auditChainService } from '../services/auditChain';
 import { io } from '../server';
 import { generateEdsPdf } from '../services/pdfService';
-import { sendSMS } from '../services/smsService';
+import { sendTelegramNotification } from '../services/telegramService';
 
 const router = Router();
 
@@ -306,12 +306,10 @@ router.post('/:id/eds', authenticate, requireRole(['SCRUTINY', 'ADMIN']), asyncH
   io.to(`application:${app.id}`).emit('status:changed', { applicationId: app.id, status: 'EDS' });
   io.to(`user:${app.proponentId}`).emit('notification', { type: 'EDS', applicationId: app.id });
 
-  if (app.proponent?.phone) {
-    await sendSMS(
-      app.proponent.phone,
-      `URGENT: An Essential Details Sought (EDS) Notice has been issued for your project "${app.projectName}". Please login to CECB portal to download the EDS PDF and resubmit.`
-    );
-  }
+  logger.info(`[DEBUG] Triggering EDS Telegram Notification for app: ${app.id}`);
+  await sendTelegramNotification(
+    `URGENT: An Essential Details Sought (EDS) Notice has been issued for your project "${app.projectName}". Please login to CECB portal to download the EDS PDF and resubmit.`
+  );
 
   res.json({ success: true, data: { application: updated, notice } });
 }));
@@ -371,12 +369,10 @@ router.post('/:id/finalize', authenticate, requireRole(['MOM_TEAM', 'ADMIN']), a
   io.to(`application:${app.id}`).emit('status:changed', { applicationId: app.id, status: 'FINALIZED' });
   io.to(`user:${app.proponentId}`).emit('notification', { type: 'FINALIZED', applicationId: app.id });
 
-  if (app.proponent?.phone) {
-    await sendSMS(
-      app.proponent.phone,
-      `CONGRATULATIONS! Your application for "${app.projectName}" has been officially FINALIZED and approved. Please log in to download the clearance certificate.`
-    );
-  }
+  logger.info(`[DEBUG] Triggering FINALIZED Telegram Notification for app: ${app.id}`);
+  await sendTelegramNotification(
+    `CONGRATULATIONS! Your application for "${app.projectName}" has been officially FINALIZED and approved. Please log in to download the clearance certificate.`
+  );
 
   res.json({ success: true, data: updated });
 }));
