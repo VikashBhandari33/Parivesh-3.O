@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { z } from 'zod';
 import { ApplicationStatus } from '@prisma/client';
 import { prisma } from '../utils/prisma';
+import { logger } from '../utils/logger';
 import { asyncHandler, AppError } from '../middleware/errorHandler';
 import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/auth';
 import { auditChainService } from '../services/auditChain';
@@ -124,6 +125,8 @@ router.post('/', authenticate, requireRole(['PROPONENT']), asyncHandler(async (r
 
 // ─── GET /api/applications/:id ────────────────────────────────────────────────
 router.get('/:id', authenticate, asyncHandler(async (req: AuthenticatedRequest, res) => {
+  logger.info(`[DEBUG] Request for application ID: ${req.params.id}`);
+  
   const application = await prisma.application.findUnique({
     where: { id: req.params.id },
     include: {
@@ -143,7 +146,14 @@ router.get('/:id', authenticate, asyncHandler(async (req: AuthenticatedRequest, 
     },
   });
 
-  if (!application) throw new AppError(404, 'NOT_FOUND', 'Application not found');
+  if (!application) {
+    logger.warn(`[DEBUG] Application NOT FOUND in DB for ID: ${req.params.id}`);
+    const count = await prisma.application.count();
+    logger.info(`[DEBUG] Total applications in current DB: ${count}`);
+    throw new AppError(404, 'NOT_FOUND', 'Application not found');
+  }
+
+  logger.info(`[DEBUG] Application FOUND: ${application.projectName} (Status: ${application.status})`);
 
   // Access control: proponents can only see their own
   if (req.user!.role === 'PROPONENT' && application.proponentId !== req.user!.id) {

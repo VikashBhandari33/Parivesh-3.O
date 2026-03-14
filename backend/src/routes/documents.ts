@@ -8,6 +8,7 @@ import { prisma } from '../utils/prisma';
 import { asyncHandler, AppError } from '../middleware/errorHandler';
 import { authenticate, requireRole, AuthenticatedRequest } from '../middleware/auth';
 import { auditChainService } from '../services/auditChain';
+import { aiAuditService } from '../services/aiAuditService';
 import { PQCManager } from '../utils/pqc';
 
 const router = Router();
@@ -162,6 +163,20 @@ router.patch('/:docId/verify', authenticate, requireRole(['SCRUTINY', 'ADMIN']),
     });
 
     res.json({ success: true, data: updated });
+  })
+);
+
+// ─── POST /api/documents/:docId/ai-audit ─────────────────────────────────────
+router.post('/:docId/ai-audit', authenticate, requireRole(['SCRUTINY', 'ADMIN']),
+  asyncHandler(async (req: AuthenticatedRequest, res) => {
+    const { docId } = req.params;
+    const result = await aiAuditService.auditDocument(docId);
+    
+    if (!result) {
+      throw new AppError(500, 'AI_AUDIT_FAILED', 'AI document audit failed or no data available');
+    }
+
+    res.json({ success: true, data: result });
   })
 );
 
