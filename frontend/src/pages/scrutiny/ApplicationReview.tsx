@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle, AlertTriangle, SendHorizonal, FileCheck, Credit
 import { format } from 'date-fns';
 import api from '../../lib/api';
 import StatusBadge from '../../components/StatusBadge';
+import IntelligentDocumentVerification from '../../components/IntelligentDocumentVerification';
 
 export default function ApplicationReview() {
   const { id } = useParams<{ id: string }>();
@@ -104,6 +105,9 @@ export default function ApplicationReview() {
               ))}
             </div>
           </div>
+
+          {/* Intelligent Document Verification */}
+          <IntelligentDocumentVerification />
 
           {/* Documents to verify */}
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
