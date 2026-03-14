@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -30,6 +30,52 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
+interface IndustrialZone {
+  name: string;
+  lat: number;
+  lng: number;
+}
+
+const DISTRICT_DATA: Record<string, { center: [number, number], suggestions: IndustrialZone[] }> = {
+  'Raipur': {
+    center: [21.2514, 81.6296],
+    suggestions: [
+      { name: 'Siltara Industrial Area', lat: 21.3780, lng: 81.6700 },
+      { name: 'Urla Industrial Complex', lat: 21.3100, lng: 81.6100 },
+      { name: 'Bhanpuri Cluster', lat: 21.2900, lng: 81.6400 }
+    ]
+  },
+  'Bilaspur': {
+    center: [22.0797, 82.1391],
+    suggestions: [
+      { name: 'Sirgitti Industrial Area', lat: 22.0400, lng: 82.1200 },
+      { name: 'Tifra Industrial Estate', lat: 22.0600, lng: 82.0900 },
+      { name: 'Dagori', lat: 21.9500, lng: 82.0200 }
+    ]
+  },
+  'Durg': {
+    center: [21.1905, 81.2849],
+    suggestions: [
+      { name: 'Bhilai Industrial Area', lat: 21.2100, lng: 81.3500 },
+      { name: 'Borai Industrial Growth Centre', lat: 21.1200, lng: 81.2500 }
+    ]
+  },
+  'Korba': {
+    center: [22.3595, 82.7501],
+    suggestions: [
+      { name: 'Balco Industrial Area', lat: 22.3900, lng: 82.7300 },
+      { name: 'Amanala', lat: 22.3400, lng: 82.7100 }
+    ]
+  },
+  'Raigarh': {
+    center: [21.8974, 83.3950],
+    suggestions: [
+      { name: 'Punjipatra Industrial Area', lat: 22.1200, lng: 83.3200 },
+      { name: 'Tamnar Cluster', lat: 22.2100, lng: 83.4200 }
+    ]
+  }
+};
+
 const SECTORS = [
   'Mining', 'Thermal Power', 'Industry', 'Infrastructure',
   'River Valley', 'Nuclear', 'Construction', 'Irrigation', 'Other',
@@ -42,6 +88,7 @@ const DISTRICTS = [
 export default function NewApplication() {
   const [step, setStep] = useState(0);
   const [draftId, setDraftId] = useState<string | null>(null);
+  const [mapViewCenter, setMapViewCenter] = useState<[number, number] | undefined>(undefined);
   const navigate = useNavigate();
 
   const { register, handleSubmit, formState: { errors }, getValues, trigger, setValue, watch } = useForm<FormData>({
@@ -50,6 +97,14 @@ export default function NewApplication() {
 
   const lat = watch('lat');
   const lng = watch('lng');
+  const district = watch('district');
+
+  // Pan map view when district is selected (no pin dropped)
+  useEffect(() => {
+    if (district && DISTRICT_DATA[district]) {
+      setMapViewCenter(DISTRICT_DATA[district].center);
+    }
+  }, [district]);
 
   // Fetch GIS risk flags whenever lat/lng are set (Existing local DB check)
   const { data: gisData } = useQuery({
@@ -89,6 +144,7 @@ export default function NewApplication() {
   const handleLocationChange = useCallback((newLat: number, newLng: number) => {
     setValue('lat', newLat);
     setValue('lng', newLng);
+    setMapViewCenter([newLat, newLng]);
   }, [setValue]);
 
   const nextStep = async () => {
@@ -232,10 +288,32 @@ export default function NewApplication() {
                   interactive
                   lat={lat}
                   lng={lng}
+                  viewCenter={mapViewCenter}
                   onLocationChange={handleLocationChange}
                   riskFlags={gisData?.riskFlags ?? []}
                   height="360px"
                 />
+
+                {district && DISTRICT_DATA[district]?.suggestions.length > 0 && (
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider flex items-center gap-1.5">
+                      <Check className="w-3 h-3 text-primary" /> Suggested Industrial Areas in {district}
+                    </label>
+                    <div className="flex flex-wrap gap-2">
+                      {DISTRICT_DATA[district].suggestions.map((zone) => (
+                        <button
+                          key={zone.name}
+                          type="button"
+                          onClick={() => handleLocationChange(zone.lat, zone.lng)}
+                          className="px-3 py-1.5 bg-gray-50 border border-gray-200 hover:border-primary hover:bg-primary/5 rounded-full text-xs font-medium text-gray-700 transition-all flex items-center gap-1.5 shadow-sm"
+                        >
+                          <MapPin className="w-3 h-3 text-gray-400" />
+                          {zone.name}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {lat && lng ? (
                   <div className="space-y-3">

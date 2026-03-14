@@ -37,6 +37,8 @@ interface GISMapProps {
   riskFlags?: GisRiskFlag[];
   /** Height of the map container */
   height?: string;
+  /** Programmatic center to pan the map view (no pin) */
+  viewCenter?: [number, number];
 }
 
 const BUFFER_COLORS: Record<string, { color: string; label: string; radiusM: number }> = {
@@ -63,6 +65,7 @@ export default function GISMap({
   onLocationChange,
   riskFlags = [],
   height = '380px',
+  viewCenter,
 }: GISMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
@@ -110,6 +113,28 @@ export default function GISMap({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Handle viewCenter prop changes (panning without dropping a pin)
+  useEffect(() => {
+    if (mapRef.current && viewCenter) {
+      mapRef.current.panTo(viewCenter, { animate: true });
+    }
+  }, [viewCenter]);
+
+  // Update map center when props change (programmatic change)
+  useEffect(() => {
+    if (mapRef.current && lat && lng) {
+      const currentCenter = mapRef.current.getCenter();
+      const dist = Math.sqrt(Math.pow(currentCenter.lat - lat, 2) + Math.pow(currentCenter.lng - lng, 2));
+      
+      // Only pan if the difference is significant (avoids loops with click-to-move)
+      if (dist > 0.001) {
+        mapRef.current.panTo([lat, lng], { animate: true });
+        placeMarker(mapRef.current, lat, lng);
+        setPinDropped(true);
+      }
+    }
+  }, [lat, lng]);
 
   // Draw buffer circles when riskFlags change
   useEffect(() => {
