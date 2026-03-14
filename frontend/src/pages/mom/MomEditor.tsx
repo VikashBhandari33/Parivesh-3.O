@@ -105,7 +105,41 @@ export default function MomEditor() {
           {app?.gistText && !app?.momText && (
             <button
               onClick={() => {
-                const html = app.gistText?.split('\n').map((p: string) => p.trim() ? `<p>${p}</p>` : '').join('') || '';
+                // Aggressive HTML stripping but preserving bolding
+                const cleanContent = (html: string) => {
+                  if (!html) return '';
+                  return html
+                    .replace(/<p[^>]*>/g, '')
+                    .replace(/<\/p>/g, '\n')
+                    .replace(/<div[^>]*>/g, '')
+                    .replace(/<\/div>/g, '\n')
+                    .replace(/<br\s*\/?>/g, '\n')
+                    .replace(/<strong[^>]*>(.*?)<\/strong>/gi, '**$1**')
+                    .replace(/<b[^>]*>(.*?)<\/b>/gi, '**$1**')
+                    .replace(/<[^>]*>/g, '') // strip any left labels
+                    .replace(/&amp;/g, '&')
+                    .replace(/&lt;/g, '<')
+                    .replace(/&gt;/g, '>')
+                    .replace(/&quot;/g, '"')
+                    .replace(/&nbsp;/g, ' ')
+                    .split('\n')
+                    .map(line => line.trim())
+                    .filter(line => line.length > 0)
+                    .join('\n');
+                };
+
+                const cleanedMarkdown = cleanContent(app.gistText);
+
+                // Convert markdown style bolding (**Title**) to HTML (<b>Title</b>) and wrap in paragraphs
+                const html = cleanedMarkdown.split('\n')
+                  .map((p: string) => {
+                    const trimmed = p.trim();
+                    if (!trimmed) return '';
+                    const bolded = trimmed.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+                    return `<p>${bolded}</p>`;
+                  })
+                  .join('');
+
                 editor?.commands.setContent(html);
                 editor?.commands.focus();
               }}

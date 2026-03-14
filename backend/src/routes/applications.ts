@@ -131,7 +131,23 @@ router.get('/:id', authenticate, asyncHandler(async (req: AuthenticatedRequest, 
     where: { id: req.params.id },
     include: {
       proponent: { select: { id: true, name: true, email: true, organization: true, phone: true } },
-      documents: { orderBy: { uploadedAt: 'desc' } },
+      documents: {
+        select: {
+          id: true,
+          applicationId: true,
+          docType: true,
+          fileName: true,
+          fileUrl: true,
+          fileHash: true,
+          fileSizeBytes: true,
+          mimeType: true,
+          ocrText: true,
+          verified: true,
+          scanned: true,
+          uploadedAt: true
+        },
+        orderBy: { uploadedAt: 'desc' }
+      },
       payment: true,
       edsNotices: {
         orderBy: { issuedAt: 'desc' },

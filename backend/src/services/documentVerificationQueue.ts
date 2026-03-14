@@ -8,7 +8,7 @@ import pdfParse from 'pdf-parse';
 import Tesseract from 'tesseract.js';
 import { prisma } from '../utils/prisma';
 import { logger } from '../utils/logger';
-import { io } from '../server';
+import { io } from '../lib/socket';
 
 export const documentVerificationQueue = new Bull('document-verification', {
   redis: process.env.REDIS_URL || 'redis://localhost:6379',
@@ -45,7 +45,7 @@ documentVerificationQueue.process(async (job) => {
     if (fs.existsSync(filePath)) {
       if (document.mimeType === 'application/pdf') {
         const dataBuffer = fs.readFileSync(filePath);
-        extractedText = await pdfParse(dataBuffer).then(data => data.text);
+        extractedText = await pdfParse(dataBuffer).then((data: any) => data.text);
       } else if (document.mimeType.startsWith('image/')) {
         const { data: { text } } = await Tesseract.recognize(filePath, 'eng');
         extractedText = text;

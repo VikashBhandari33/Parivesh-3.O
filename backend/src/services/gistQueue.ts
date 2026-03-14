@@ -2,7 +2,7 @@ import Bull from 'bull';
 import Groq from 'groq-sdk';
 import { prisma } from '../utils/prisma';
 import { logger } from '../utils/logger';
-import { io } from '../server';
+import { io } from '../lib/socket';
 import { auditChainService } from './auditChain';
 
 export const gistQueue = new Bull('gist-generation', {
@@ -38,16 +38,16 @@ gistQueue.process(async (job) => {
 
     // Build OCR text summary from documents
     const ocrSummary = application.documents
-      .filter((d) => d.ocrText)
-      .map((d) => `[${d.docType}]: ${d.ocrText?.slice(0, 500)}`)
+      .filter((d: any) => d.ocrText)
+      .map((d: any) => `[${d.docType}]: ${d.ocrText?.slice(0, 500)}`)
       .join('\n\n')
       .slice(0, 3000);
 
-    const documentList = application.documents.map((d) => d.docType).join(', ');
+    const documentList = application.documents.map((d: any) => d.docType).join(', ');
 
     const gisFlagsText = application.gisRiskFlags.length > 0
       ? application.gisRiskFlags
-          .map((f) => `${f.flagType} within ${Math.round(f.distanceM)}m (${f.layerName})`)
+          .map((f: any) => `${f.flagType} within ${Math.round(f.distanceM)}m (${f.layerName})`)
           .join('; ')
       : 'No environmental proximity concerns identified';
 
@@ -66,7 +66,7 @@ Application Data:
 - Environmental Concerns: ${gisFlagsText}
 - Extracted Text Summary: ${ocrSummary || 'No OCR text available'}
 
-Generate a structured gist with these sections:
+Generate a structured gist with these sections. Use markdown bolding (e.g. **1. Project Overview**) for each section header:
 1. Project Overview
 2. Location & Environmental Context
 3. Key Facts & Parameters
@@ -76,7 +76,7 @@ Generate a structured gist with these sections:
 7. Recommended Conditions (if applicable)
 
 Tone: Formal government document. Language: English.
-Format: Structured paragraphs. No bullet points.`;
+Format: Structured paragraphs with bold section headers. No bullet points.`;
 
     let gistText: string;
 
@@ -131,44 +131,34 @@ Format: Structured paragraphs. No bullet points.`;
   }
 });
 
-function generateFallbackGist(application: {
-  projectName: string;
-  sector: string;
-  district: string | null;
-  state: string;
-  areaHa: number | null;
-  proponent: { name: string; organization: string | null };
-  documents: { docType: string }[];
-  gisRiskFlags: { flagType: string; distanceM: number }[];
-  createdAt: Date;
-}): string {
-  return `MEETING GIST — ENVIRONMENTAL CLEARANCE APPLICATION
+function generateFallbackGist(application: any): string {
+  return `**MEETING GIST — ENVIRONMENTAL CLEARANCE APPLICATION**
 
-PROJECT OVERVIEW
+**PROJECT OVERVIEW**
 The project "${application.projectName}" falling under the ${application.sector} sector has been referred for committee consideration. The application was filed by ${application.proponent.name} (${application.proponent.organization || 'Individual Proponent'}) on ${application.createdAt.toISOString().split('T')[0]}.
 
-LOCATION & ENVIRONMENTAL CONTEXT
+**LOCATION & ENVIRONMENTAL CONTEXT**
 The proposed project is located in ${application.district || 'the specified district'}, ${application.state}. The total project area is ${application.areaHa || 'as specified'} hectares.
 
-KEY FACTS & PARAMETERS
+**KEY FACTS & PARAMETERS**
 Project Name: ${application.projectName}
 Sector: ${application.sector}
 Location: ${application.district}, ${application.state}
 Area: ${application.areaHa} ha
 Proponent: ${application.proponent.name}
 
-DOCUMENTS VERIFIED
-The following documents have been submitted and verified: ${application.documents.map((d) => d.docType).join(', ') || 'None on record'}.
+**DOCUMENTS VERIFIED**
+The following documents have been submitted and verified: ${application.documents.map((d: any) => d.docType).join(', ') || 'None on record'}.
 
-ENVIRONMENTAL CONCERNS IDENTIFIED
+**ENVIRONMENTAL CONCERNS IDENTIFIED**
 ${application.gisRiskFlags.length > 0
-  ? application.gisRiskFlags.map((f) => `The project site is located within ${Math.round(f.distanceM)} metres of ${f.flagType.toLowerCase()} areas, which requires specific attention during review.`).join(' ')
+  ? application.gisRiskFlags.map((f: any) => `The project site is located within ${Math.round(f.distanceM)} metres of ${f.flagType.toLowerCase()} areas, which requires specific attention during review.`).join(' ')
   : 'No significant environmental proximity concerns have been identified based on GIS analysis.'}
 
-COMMITTEE OBSERVATIONS
+**COMMITTEE OBSERVATIONS**
 The Committee has reviewed the application in detail. All submitted documents have been verified by the Scrutiny Team. The application meets the procedural requirements for committee consideration.
 
-RECOMMENDED CONDITIONS
+**RECOMMENDED CONDITIONS**
 Subject to compliance with applicable environmental norms and conditions as may be stipulated by the Committee, the application may be considered for further processing as per the prescribed rules and regulations.`;
 }
 

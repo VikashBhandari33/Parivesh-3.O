@@ -85,9 +85,43 @@ router.get('/:applicationId/export', authenticate, asyncHandler(async (req: Auth
   if (!app) throw new AppError(404, 'NOT_FOUND', 'Application not found');
   if (!app.momText && !app.gistText) throw new AppError(400, 'NO_MOM', 'MoM has not been generated yet');
 
-  const momContent = app.momText || app.gistText || '';
+  // Aggressive HTML stripping but preserving bolding
+  const cleanContent = (html: string) => {
+    if (!html) return '';
+    return html
+      .replace(/<p[^>]*>/g, '') 
+      .replace(/<\/p>/g, '\n')
+      .replace(/<div[^>]*>/g, '')
+      .replace(/<\/div>/g, '\n')
+      .replace(/<br\s*\/?>/g, '\n')
+      .replace(/<strong[^>]*>(.*?)<\/strong>/gi, '**$1**')
+      .replace(/<b[^>]*>(.*?)<\/b>/gi, '**$1**')
+      .replace(/<[^>]*>/g, '') // strip any left labels
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&nbsp;/g, ' ')
+      .split('\n')
+      .map(line => line.trim())
+      .filter(line => line.length > 0)
+      .join('\n');
+  };
+
+  const momContent = cleanContent(app.momText || app.gistText || '');
   const projectName = app.projectName;
   const today = new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'long', year: 'numeric' });
+
+  // Read logos
+  const logo1Path = path.join(__dirname, '../../../frontend/public/emblem-logo.png'); // Left
+  const logo2Path = path.join(__dirname, '../../../frontend/public/cecb.png'); // Right
+
+  let logo1Base64 = '';
+  let logo2Base64 = '';
+  try {
+    if (fs.existsSync(logo1Path)) logo1Base64 = `data:image/png;base64,${fs.readFileSync(logo1Path).toString('base64')}`;
+    if (fs.existsSync(logo2Path)) logo2Base64 = `data:image/png;base64,${fs.readFileSync(logo2Path).toString('base64')}`;
+  } catch (e) { console.error('Logo load failed', e); }
 
   if (format === 'pdf') {
     const fonts = {
@@ -100,23 +134,51 @@ router.get('/:applicationId/export', authenticate, asyncHandler(async (req: Auth
     };
 
     const printer = new PdfPrinter(fonts);
+
+    const contentNodes = momContent.split('\n').map(line => {
+      const boldMatch = line.match(/^\s*\*\*(.*)\*\*\s*$/) || line.match(/^\s*[0-9]\.\s+\*\*(.*)\*\*\s*$/);
+      if (boldMatch) {
+        return { text: boldMatch[1] || boldMatch[0], bold: true, margin: [0, 10, 0, 4], fontSize: 11 };
+      }
+      return { text: line, margin: [0, 0, 0, 8], fontSize: 10.5 };
+    });
+
     const docDefinition = {
       pageSize: 'A4' as const,
-      pageMargins: [60, 70, 60, 70] as [number, number, number, number],
+      pageMargins: [60, 40, 60, 60] as [number, number, number, number],
       content: [
-        { text: 'CHHATTISGARH ENVIRONMENT CONSERVATION BOARD', style: 'header', alignment: 'center' },
-        { text: 'MINUTES OF MEETING', style: 'subheader', alignment: 'center', margin: [0, 4, 0, 2] },
-        { text: `Project: ${projectName}`, style: 'title', margin: [0, 12, 0, 4] },
-        { text: `Date: ${today}`, style: 'meta', margin: [0, 0, 0, 20] },
+        {
+          table: {
+            widths: [60, '*', 60],
+            body: [
+              [
+                logo1Base64 ? { image: logo1Base64, width: 45, alignment: 'left' } : {},
+                {
+                  stack: [
+                    { text: 'CHHATTISGARH ENVIRONMENT CONSERVATION BOARD', style: 'header', alignment: 'center' },
+                    { text: 'Paryavas Bhawan, North Block, Sector-19, Atal Nagar, Raipur (C.G.)', style: 'preamble', alignment: 'center' },
+                    { text: 'MINUTES OF MEETING', style: 'subheader', alignment: 'center', margin: [0, 8, 0, 0] },
+                  ]
+                },
+                logo2Base64 ? { image: logo2Base64, width: 45, alignment: 'right' } : {},
+              ]
+            ]
+          },
+          layout: 'noBorders',
+          margin: [0, 0, 0, 10]
+        },
         { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 475, y2: 0, lineWidth: 1.5 }], margin: [0, 0, 0, 16] },
-        { text: momContent, style: 'body' },
+        { text: `Project: ${projectName}`, style: 'title', margin: [0, 0, 0, 4] },
+        { text: `Date: ${today}`, style: 'meta', margin: [0, 0, 0, 20] },
+        ...contentNodes,
         { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 475, y2: 0, lineWidth: 0.5 }], margin: [0, 30, 0, 8] },
         { text: 'Member Secretary, CECB', style: 'signature', alignment: 'right' },
         { text: `Chhattisgarh Environment Conservation Board`, style: 'signatureSub', alignment: 'right' },
       ],
       styles: {
-        header: { fontSize: 14, bold: true, color: '#1B5E20' },
-        subheader: { fontSize: 12, bold: true, color: '#37474F' },
+        header: { fontSize: 13, bold: true, color: '#1B5E20' },
+        preamble: { fontSize: 8, color: '#444' },
+        subheader: { fontSize: 11, bold: true, color: '#37474F' },
         title: { fontSize: 12, bold: true },
         meta: { fontSize: 10, color: '#666' },
         body: { fontSize: 10.5, lineHeight: 1.6 },
@@ -135,48 +197,75 @@ router.get('/:applicationId/export', authenticate, asyncHandler(async (req: Auth
   }
 
   if (format === 'docx') {
-    const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType } = require('docx');
-    
-    const doc = new Document({
-      sections: [{
-        properties: {},
-        children: [
-          new Paragraph({
-            text: "CHHATTISGARH ENVIRONMENT CONSERVATION BOARD",
-            heading: HeadingLevel.HEADING_1,
-            alignment: AlignmentType.CENTER,
-          }),
-          new Paragraph({
-            text: "MINUTES OF MEETING",
-            heading: HeadingLevel.HEADING_2,
-            alignment: AlignmentType.CENTER,
-          }),
-          new Paragraph({ text: "" }),
-          new Paragraph({
-            children: [
-              new TextRun({ text: "Project: ", bold: true }),
-              new TextRun(projectName)
-            ]
-          }),
-          new Paragraph({
-            children: [
-              new TextRun({ text: "Date: ", bold: true }),
-              new TextRun(today)
-            ]
-          }),
-          new Paragraph({ text: "" }),
-          new Paragraph({ text: "--------------------------------------------------------------------------------", alignment: AlignmentType.CENTER }),
-          new Paragraph({ text: "" }),
-          ...momContent.split('\n').map((line: string) => new Paragraph({ text: line })),
-          new Paragraph({ text: "" }),
-          new Paragraph({ text: "--------------------------------------------------------------------------------", alignment: AlignmentType.CENTER }),
-          new Paragraph({ text: "" }),
-          new Paragraph({ text: "Member Secretary, CECB", alignment: AlignmentType.RIGHT }),
-          new Paragraph({ text: "Chhattisgarh Environment Conservation Board", alignment: AlignmentType.RIGHT }),
-        ],
-      }],
+    const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, ImageRun, Table, TableRow, TableCell, WidthType } = require('docx');
+
+    const bodyParagraphs = momContent.split('\n').map((line: string) => {
+      const boldMatch = line.match(/^\s*\*\*(.*)\*\*\s*$/) || line.match(/^\s*[0-9]\.\s+\*\*(.*)\*\*\s*$/);
+      if (boldMatch) {
+        return new Paragraph({
+          children: [new TextRun({ text: boldMatch[1] || boldMatch[0], bold: true, size: 23 })],
+          spacing: { before: 200, after: 100 }
+        });
+      }
+      return new Paragraph({
+        children: [new TextRun({ text: line, size: 21 })],
+        spacing: { after: 120 }
+      });
     });
 
+    const headerRow = new TableRow({
+      children: [
+        new TableCell({
+          children: [
+            fs.existsSync(logo1Path)
+              ? new Paragraph({ children: [new ImageRun({ data: fs.readFileSync(logo1Path), transformation: { width: 45, height: 45 } })], alignment: AlignmentType.LEFT })
+              : new Paragraph({ text: "" })
+          ],
+          width: { size: 15, type: WidthType.PERCENTAGE },
+          borders: { top: { style: 'none' as any, size: 0 }, bottom: { style: 'none' as any, size: 0 }, left: { style: 'none' as any, size: 0 }, right: { style: 'none' as any, size: 0 } }
+        }),
+        new TableCell({
+          children: [
+            new Paragraph({ text: "CHHATTISGARH ENVIRONMENT CONSERVATION BOARD", heading: HeadingLevel.HEADING_1, alignment: AlignmentType.CENTER }),
+            new Paragraph({ text: "Paryavas Bhawan, North Block, Sector-19, Atal Nagar, Raipur (C.G.)", alignment: AlignmentType.CENTER }),
+            new Paragraph({ text: "MINUTES OF MEETING", heading: HeadingLevel.HEADING_2, alignment: AlignmentType.CENTER, spacing: { before: 100 } })
+          ],
+          width: { size: 70, type: WidthType.PERCENTAGE },
+          borders: { top: { style: 'none' as any, size: 0 }, bottom: { style: 'none' as any, size: 0 }, left: { style: 'none' as any, size: 0 }, right: { style: 'none' as any, size: 0 } }
+        }),
+        new TableCell({
+          children: [
+            fs.existsSync(logo2Path)
+              ? new Paragraph({ children: [new ImageRun({ data: fs.readFileSync(logo2Path), transformation: { width: 45, height: 45 } })], alignment: AlignmentType.RIGHT })
+              : new Paragraph({ text: "" })
+          ],
+          width: { size: 15, type: WidthType.PERCENTAGE },
+          borders: { top: { style: 'none' as any, size: 0 }, bottom: { style: 'none' as any, size: 0 }, left: { style: 'none' as any, size: 0 }, right: { style: 'none' as any, size: 0 } }
+        })
+      ]
+    });
+
+    const docChildren = [
+      new Table({
+        rows: [headerRow],
+        width: { size: 100, type: WidthType.PERCENTAGE },
+        borders: { top: { style: 'none' as any, size: 0 }, bottom: { style: 'none' as any, size: 0 }, left: { style: 'none' as any, size: 0 }, right: { style: 'none' as any, size: 0 } }
+      }),
+      new Paragraph({ text: "" }),
+      new Paragraph({ children: [new TextRun({ text: "Project: ", bold: true }), new TextRun(projectName)] }),
+      new Paragraph({ children: [new TextRun({ text: "Date: ", bold: true }), new TextRun(today)] }),
+      new Paragraph({ text: "" }),
+      new Paragraph({ text: "--------------------------------------------------------------------------------", alignment: AlignmentType.CENTER }),
+      new Paragraph({ text: "" }),
+      ...bodyParagraphs,
+      new Paragraph({ text: "" }),
+      new Paragraph({ text: "--------------------------------------------------------------------------------", alignment: AlignmentType.CENTER }),
+      new Paragraph({ text: "" }),
+      new Paragraph({ text: "Member Secretary, CECB", alignment: AlignmentType.RIGHT }),
+      new Paragraph({ text: "Chhattisgarh Environment Conservation Board", alignment: AlignmentType.RIGHT }),
+    ];
+
+    const doc = new Document({ sections: [{ properties: {}, children: docChildren }] });
     const buffer = await Packer.toBuffer(doc);
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     res.setHeader('Content-Disposition', `attachment; filename="MoM-${app.id.slice(0, 8)}.docx"`);

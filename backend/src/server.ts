@@ -7,7 +7,7 @@ import morgan from 'morgan';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
-import { Server as SocketServer } from 'socket.io';
+import { initSocket } from './lib/socket';
 import swaggerUi from 'swagger-ui-express';
 
 import { logger } from './utils/logger';
@@ -34,28 +34,7 @@ export const app = express();
 const httpServer = http.createServer(app);
 
 // ─── Socket.io ───────────────────────────────────────────────────────────────
-export const io = new SocketServer(httpServer, {
-  cors: {
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-    credentials: true,
-  },
-});
-
-io.on('connection', (socket) => {
-  logger.info(`Socket connected: ${socket.id}`);
-
-  socket.on('join:application', (applicationId: string) => {
-    socket.join(`application:${applicationId}`);
-  });
-
-  socket.on('join:user', (userId: string) => {
-    socket.join(`user:${userId}`);
-  });
-
-  socket.on('disconnect', () => {
-    logger.info(`Socket disconnected: ${socket.id}`);
-  });
-});
+export const io = initSocket(httpServer);
 
 // ─── Rate limiting ────────────────────────────────────────────────────────────
 const apiLimiter = rateLimit({
